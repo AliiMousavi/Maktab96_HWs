@@ -4,7 +4,6 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
-import java.util.List;
 
 public class InappropriatePair {
 
@@ -31,7 +30,8 @@ public class InappropriatePair {
         Integer[] numbers = {1, 3, 7, 4, 3, 6, 5, 8, 5, 5, 2, 9, 7, 3};
         ArrayList<Integer> listOfNumbers = addingArrayToArraylist(numbers);
 
-        System.out.println(deleteInappropriatePair(new ArrayList<>()));
+
+        System.out.println(deleteInappropriatePair(addingArrayToArraylist(numbers)));
 
     }
     }
