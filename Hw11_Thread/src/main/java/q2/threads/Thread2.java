@@ -14,10 +14,11 @@ public class Thread2 implements Runnable{
     public void run() {
 
         synchronized(secondLock) {
-            System.out.println("Thread1 get firstLock");
+            System.out.println("Thread2 get secondLock");
 
             try {
                 Thread.sleep(1000);
+                System.out.println("Thread2 wait to Thread1 release the firstLock ");
                 firstLock.wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();            }
