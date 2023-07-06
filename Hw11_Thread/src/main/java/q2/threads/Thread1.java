@@ -18,6 +18,7 @@ public class Thread1 implements Runnable{
 
             try {
                 Thread.sleep(2000);
+                System.out.println("Thread1 wait to Thread2 release the secondLock");
                 secondLock.wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
