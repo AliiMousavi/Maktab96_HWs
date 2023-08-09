@@ -4,7 +4,11 @@ package q1.ir.maktab;
 import q1.ir.maktab.model.Person;
 import q1.ir.maktab.model.PersonSummary;
 
+import java.sql.Date;
 import java.text.ParseException;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -14,21 +18,21 @@ import static q1.ir.maktab.mockdata.MockData.getPeople;
 
 public class Main {
 
-    public static List<Person> filterByAge(List<Person> persons){
+    public static List<Person> filterByAge(List<Person> persons) {
 
         return persons.stream()
                 .filter(person -> person.getAge() < 50)
                 .toList();
     }
 
-    public static List<Person> sortByUsername(List<Person> persons){
+    public static List<Person> sortByUsername(List<Person> persons) {
 
         return persons.stream()
                 .sorted(Comparator.comparing(Person::getUsername))
                 .toList();
     }
 
-    public static List<Person> sortByAgeAndLname(List<Person> persons){
+    public static List<Person> sortByAgeAndLname(List<Person> persons) {
 
         return persons.stream()
                 .sorted(Comparator.comparing(Person::getAge))
@@ -36,14 +40,15 @@ public class Main {
                 .toList();
     }
 
-    public static void mapByIpv4(List<Person> persons){
+    public static void mapByIpv4(List<Person> persons) {
 
         System.out.println(persons.stream()
                 .map(Person::getIpv4)
+                        .limit(5)
                 .collect(Collectors.toList()));
     }
 
-    public static Map<String, Person>  b5(List<Person> persons){
+    public static Map<String, Person> b5(List<Person> persons) {
 
         return persons.stream()
                 .sorted(Comparator.comparing(Person::getLastName))
@@ -57,24 +62,24 @@ public class Main {
 //    public static List<PersonSummary>  b6(List<Person> persons){
 //
 //        List<PersonSummary> summaries = persons.stream()
-//                .map(p -> {
-//                    try {
-//                        return new PersonSummary(
-//                                p.getId(),
-//                                p.getFirstName(),
-//                                p.getLastName(),
-//                                p.getAge(),
-//
-//                        );
-//                    } catch (ParseException e) {
-//                        e.printStackTrace();
-//                        return null;
-//                    }
-//                })
-//                .collect(Collectors.toList());
+//                .map(p -> new PersonSummary(
+//                        p.getId(),
+//                        p.getFirstName(),
+//                        p.getLastName(),
+//                        p.getAge(),
+//                        convertDate(p.getBirthDate())
+//                ))
+//                .map(p -> Period.between( , LocalDate.now()).getYears())
+//                .toList();
+//        return summaries;
 //    }
 
-
+    public static Date convertDate(String dateString) {
+        String formatString = "M/d/yyyy";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(formatString);
+        LocalDate localDate = LocalDate.parse(dateString, formatter);
+        return Date.valueOf(localDate);
+    }
 
 
     public static void main(String[] args) {
@@ -83,8 +88,8 @@ public class Main {
 //        System.out.println(persons.size());
 
 //        System.out.println(filterByAge(persons));
-//        System.out.println(sortByUsername(persons));
-        System.out.println(persons);
+        mapByIpv4(persons);
+//        System.out.println(persons);
 
     }
 }
