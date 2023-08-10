@@ -7,9 +7,10 @@ import java.util.Collection;
 public interface StudentRepository {
     Student saveOrUpdate(Student student);
     Student update(Student student);
-    Student load(Student student);
+    void deleteById(Long id);
+    Student load(Long id);
     Collection<Student> loadAll();
-    boolean contains(Student student);
+    boolean contains(Long id);
 
     void beginTransaction();
 
