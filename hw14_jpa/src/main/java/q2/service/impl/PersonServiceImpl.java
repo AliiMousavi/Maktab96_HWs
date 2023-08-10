@@ -25,8 +25,13 @@ public class PersonServiceImpl implements PersonService {
     }
 
     @Override
-    public Person load(Person person) {
-        return repository.load(person);
+    public void deleteById(Long id) {
+        repository.deleteById(id);
+    }
+
+    @Override
+    public Person load(Long id) {
+        return repository.load(id);
     }
 
     @Override
@@ -42,7 +47,7 @@ public class PersonServiceImpl implements PersonService {
     }
 
     @Override
-    public boolean contains(Person person) {
-        return repository.contains(person);
+    public boolean contains(Long id) {
+        return repository.contains(id);
     }
 }
