@@ -40,8 +40,15 @@ public class TeacherRepositoryImpl implements TeacherRepository {
     }
 
     @Override
-    public Teacher load(Teacher teacher) {
-        return em.find(Teacher.class, teacher);
+    public void deleteById(Long id) {
+        beginTransaction();
+        em.remove(id);
+        commitTransaction();
+    }
+
+    @Override
+    public Teacher load(Long id) {
+        return em.find(Teacher.class, id);
     }
 
     @Override
@@ -50,8 +57,8 @@ public class TeacherRepositoryImpl implements TeacherRepository {
     }
 
     @Override
-    public boolean contains(Teacher teacher) {
-        return isTeacherExist(em.find(Teacher.class, teacher));
+    public boolean contains(Long id) {
+        return isTeacherExist(em.find(Teacher.class, id));
     }
 
     @Override
