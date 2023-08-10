@@ -1,17 +1,19 @@
-package service;
+package q2.repository;
 
-import entity.Person;
-import entity.Student;
-import entity.Teacher;
+import q2.entity.Teacher;
 
 import java.util.Collection;
 
-public interface TeacherService {
+public interface TeacherRepository {
     Teacher saveOrUpdate(Teacher teacher);
     Teacher update(Teacher teacher);
     Teacher load(Teacher teacher);
     Collection<Teacher> loadAll();
-
-    Teacher signUp(String firstName,String lastName, Long teacherId);
     boolean contains(Teacher teacher);
+
+    void beginTransaction();
+
+    void commitTransaction();
+
+    void rollBack();
 }

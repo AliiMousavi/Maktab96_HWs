@@ -1,7 +1,7 @@
-package service;
+package q2.service;
 
-import entity.Person;
-import entity.Student;
+import q2.entity.Person;
+import q2.entity.Student;
 
 import java.util.Collection;
 

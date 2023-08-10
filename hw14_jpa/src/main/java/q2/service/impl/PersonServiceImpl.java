@@ -1,11 +1,10 @@
-package service.impl;
+package q2.service.impl;
 
-import entity.Person;
-import repository.PersonRepository;
-import service.PersonService;
+import q2.entity.Person;
+import q2.repository.PersonRepository;
+import q2.service.PersonService;
 
 import java.util.Collection;
-import java.util.Optional;
 
 public class PersonServiceImpl implements PersonService {
 

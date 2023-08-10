@@ -1,7 +1,6 @@
-package repository;
+package q2.repository;
 
-import entity.Person;
-import entity.Student;
+import q2.entity.Student;
 
 import java.util.Collection;
 

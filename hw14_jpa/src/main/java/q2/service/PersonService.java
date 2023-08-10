@@ -1,9 +1,8 @@
-package service;
+package q2.service;
 
-import entity.Person;
+import q2.entity.Person;
 
 import java.util.Collection;
-import java.util.Optional;
 
 public interface PersonService {
     Person saveOrUpdate(Person person);

@@ -1,8 +1,7 @@
-package repository.impl;
+package q2.repository.impl;
 
-import entity.Student;
-import entity.Teacher;
-import repository.TeacherRepository;
+import q2.entity.Teacher;
+import q2.repository.TeacherRepository;
 
 import javax.persistence.EntityManager;
 import java.util.Collection;

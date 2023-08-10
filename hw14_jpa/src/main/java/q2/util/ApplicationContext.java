@@ -1,9 +1,9 @@
-package util;
+package q2.util;
 
-import repository.PersonRepository;
-import repository.impl.PersonRepositoryImpl;
-import service.PersonService;
-import service.impl.PersonServiceImpl;
+import q2.repository.PersonRepository;
+import q2.repository.impl.PersonRepositoryImpl;
+import q2.service.PersonService;
+import q2.service.impl.PersonServiceImpl;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

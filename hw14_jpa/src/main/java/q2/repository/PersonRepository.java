@@ -1,10 +1,8 @@
-package repository;
+package q2.repository;
 
-import entity.Person;
+import q2.entity.Person;
 
 import java.util.Collection;
-import java.util.Locale;
-import java.util.Optional;
 
 public interface PersonRepository {
     Person saveOrUpdate(Person person);

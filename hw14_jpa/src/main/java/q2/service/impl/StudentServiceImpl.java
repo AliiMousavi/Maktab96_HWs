@@ -1,10 +1,9 @@
-package service.impl;
+package q2.service.impl;
 
-import entity.Person;
-import entity.Student;
-import repository.PersonRepository;
-import repository.StudentRepository;
-import service.StudentService;
+import q2.entity.Person;
+import q2.entity.Student;
+import q2.repository.StudentRepository;
+import q2.service.StudentService;
 
 import java.util.Collection;
 

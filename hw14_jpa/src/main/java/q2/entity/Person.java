@@ -1,4 +1,4 @@
-package entity;
+package q2.entity;
 
 import lombok.*;
 

@@ -1,11 +1,10 @@
-package repository.impl;
+package q2.repository.impl;
 
-import entity.Person;
-import repository.PersonRepository;
+import q2.entity.Person;
+import q2.repository.PersonRepository;
 
 import javax.persistence.EntityManager;
 import java.util.Collection;
-import java.util.Optional;
 
 public class PersonRepositoryImpl implements PersonRepository {
 
