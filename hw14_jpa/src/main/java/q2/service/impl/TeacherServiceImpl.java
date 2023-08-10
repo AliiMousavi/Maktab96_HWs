@@ -24,8 +24,13 @@ public class TeacherServiceImpl implements TeacherService {
     }
 
     @Override
-    public Teacher load(Teacher teacher) {
-        return repository.load(teacher);
+    public void deleteById(Long id) {
+        repository.deleteById(id);
+    }
+
+    @Override
+    public Teacher load(Long id) {
+        return repository.load(id);
     }
 
     @Override
@@ -41,7 +46,7 @@ public class TeacherServiceImpl implements TeacherService {
     }
 
     @Override
-    public boolean contains(Teacher teacher) {
-        return repository.contains(teacher);
+    public boolean contains(Long id) {
+        return repository.contains(id);
     }
 }
