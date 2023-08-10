@@ -25,8 +25,13 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student load(Student student) {
-        return repository.load(student);
+    public void deleteById(Long id) {
+        repository.deleteById(id);
+    }
+
+    @Override
+    public Student load(Long id) {
+        return repository.load(id);
     }
 
     @Override
@@ -42,7 +47,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public boolean contains(Person person) {
-        return false;
+    public boolean contains(Long id) {
+        return repository.contains(id);
     }
 }
