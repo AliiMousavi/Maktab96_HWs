@@ -8,9 +8,10 @@ import java.util.Collection;
 public interface StudentService {
     Student saveOrUpdate(Student student);
     Student update(Student student);
-    Student load(Student student);
+    void deleteById(Long id);
+    Student load(Long id);
     Collection<Student> loadAll();
 
     Student signUp(String firstName,String lastName, long studentId);
-    boolean contains(Person person);
+    boolean contains(Long id);
 }
