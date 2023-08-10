@@ -7,9 +7,10 @@ import java.util.Collection;
 public interface PersonService {
     Person saveOrUpdate(Person person);
     Person update(Person person);
-    Person load(Person person);
+    void deleteById(Long id);
+    Person load(Long id);
     Collection<Person> loadAll();
 
     Person signUp(String firstName,String lastName);
-    boolean contains(Person person);
+    boolean contains(Long id);
 }
