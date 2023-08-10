@@ -41,8 +41,15 @@ public class PersonRepositoryImpl implements PersonRepository {
     }
 
     @Override
-    public Person load(Person person) {
-        return em.find(Person.class, person);
+    public void deleteById(Long id) {
+        beginTransaction();
+        em.remove(id);
+        commitTransaction();
+    }
+
+    @Override
+    public Person load(Long id) {
+        return em.find(Person.class, id);
     }
 
     @Override
@@ -51,8 +58,8 @@ public class PersonRepositoryImpl implements PersonRepository {
     }
 
     @Override
-    public boolean contains(Person person) {
-        return isPersonExist(em.find(Person.class, person));
+    public boolean contains(Long id) {
+        return isPersonExist(em.find(Person.class, id));
     }
 
     @Override
