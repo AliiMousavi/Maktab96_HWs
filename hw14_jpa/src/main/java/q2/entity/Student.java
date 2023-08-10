@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import java.sql.Date;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -27,5 +28,12 @@ public class Student extends Person {
     public Student(String firstName, String lastName, Long studentId) {
         super(firstName, lastName);
         this.studentId = studentId;
+    }
+
+    public Student(String firstName, String lastName, Date dateOfBirth, Long studentId, String fieldOfStudy, int entryYear) {
+        super(firstName, lastName, dateOfBirth);
+        this.studentId = studentId;
+        this.fieldOfStudy = fieldOfStudy;
+        this.entryYear = entryYear;
     }
 }
