@@ -38,8 +38,15 @@ public class StudentRepositoryImpl implements StudentRepository {
     }
 
     @Override
-    public Student load(Student student) {
-        return em.find(Student.class, student);
+    public void deleteById(Long id) {
+        beginTransaction();
+        em.remove(id);
+        commitTransaction();
+    }
+
+    @Override
+    public Student load(Long id) {
+        return em.find(Student.class, id);
     }
 
     @Override
@@ -48,8 +55,8 @@ public class StudentRepositoryImpl implements StudentRepository {
     }
 
     @Override
-    public boolean contains(Student student) {
-        return isStudentExist(em.find(Student.class, student));
+    public boolean contains(Long id) {
+        return isStudentExist(em.find(Student.class, id));
     }
 
     @Override
