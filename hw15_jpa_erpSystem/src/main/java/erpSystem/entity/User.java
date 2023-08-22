@@ -15,6 +15,7 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Table(name = "Users")
 public class User extends BaseEntity<Long> {
 
     String firstName;
