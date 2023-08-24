@@ -20,8 +20,12 @@ public class BaseServiceImpl<T extends BaseEntity<ID>, ID extends Serializable, 
     @Override
     public T saveOrUpdate(T entity) {
         beginTransaction();
-        repository.saveOrUpdate(entity);
-        commitTransaction();
+        try {
+            repository.saveOrUpdate(entity);
+            commitTransaction();
+        }catch (Exception e){
+            rollBack();
+        }
         return entity;
     }
 
@@ -34,8 +38,13 @@ public class BaseServiceImpl<T extends BaseEntity<ID>, ID extends Serializable, 
     @Override
     public void deleteById(ID id) {
         beginTransaction();
-        repository.deleteById(id);
-        commitTransaction();
+        try {
+            repository.deleteById(id);
+            commitTransaction();
+        }catch (Exception e){
+            rollBack();
+        }
+
     }
 
     @Override
@@ -51,11 +60,16 @@ public class BaseServiceImpl<T extends BaseEntity<ID>, ID extends Serializable, 
     @Override
     public Collection<T> saveAll(Collection<T> entityCollection) {
         beginTransaction();
-        List<T> ts = (List<T>) repository.saveAll(entityCollection);
-        commitTransaction();
-        return ts;
-
+        try {
+            List<T> ts = (List<T>) repository.saveAll(entityCollection);
+            commitTransaction();
+            return ts;
+        }catch (Exception e){
+            rollBack();
+        }
+        return entityCollection;
     }
+
 
     @Override
     public void beginTransaction() {
