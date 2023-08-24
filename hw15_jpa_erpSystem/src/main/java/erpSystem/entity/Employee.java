@@ -13,5 +13,6 @@ import javax.persistence.MappedSuperclass;
 @NoArgsConstructor
 @Data
 public class Employee extends User{
+    String employeeId;
     int salary;
 }
