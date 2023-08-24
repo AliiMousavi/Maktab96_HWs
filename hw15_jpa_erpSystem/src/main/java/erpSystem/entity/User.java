@@ -1,12 +1,10 @@
 package erpSystem.entity;
 
 import erpSystem.base.entity.BaseEntity;
+import erpSystem.entity.enums.LogInRole;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 
 @EqualsAndHashCode(callSuper = true)
@@ -20,8 +18,10 @@ public class User extends BaseEntity<Long> {
 
     String firstName;
     String lastName;
+    @Column(unique = true)
     String username;
     String password;
     String email;
+    @Column(length = 11)
     String mobileNumber;
 }
