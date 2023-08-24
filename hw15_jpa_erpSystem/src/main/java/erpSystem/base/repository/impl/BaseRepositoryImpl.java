@@ -15,7 +15,7 @@ import java.util.Optional;
 @AllArgsConstructor
 public abstract class BaseRepositoryImpl
         <T extends BaseEntity<ID>, ID extends Serializable> implements BaseRepository<T, ID> {
-    private EntityManager em;
+    protected EntityManager em;
 
     @Override
     public T saveOrUpdate(T entity) {
