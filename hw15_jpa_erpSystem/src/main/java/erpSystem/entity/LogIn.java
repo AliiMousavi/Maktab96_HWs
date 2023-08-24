@@ -15,5 +15,6 @@ import javax.persistence.Entity;
 public class LogIn extends BaseEntity<Long> {
     LogInRole logInRole;
     String username;
+    String email;
     String password;
 }
