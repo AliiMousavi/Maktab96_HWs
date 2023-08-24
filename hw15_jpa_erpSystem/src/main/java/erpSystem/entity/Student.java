@@ -17,9 +17,15 @@ import java.util.List;
 @Data
 public class Student extends User{
 
+    String studentId;
+
     float GpaOfPreviousSemester;
-    @ManyToMany
+
+    int grade;
+
+    @ManyToMany(mappedBy = "students" , cascade = CascadeType.PERSIST)
     List<Course> passedCourses = new ArrayList<>();
+
 
 
 }
