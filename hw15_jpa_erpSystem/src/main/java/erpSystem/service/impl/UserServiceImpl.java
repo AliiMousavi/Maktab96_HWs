@@ -6,7 +6,7 @@ import erpSystem.base.service.impl.BaseServiceImpl;
 import erpSystem.entity.User;
 import erpSystem.repository.UserRepository;
 import erpSystem.service.UserService;
-import erpSystem.util.SecurityContext;
+
 
 import java.io.Serializable;
 import java.util.Optional;
@@ -35,7 +35,6 @@ public class UserServiceImpl<T extends User>
         if (isValidEmailPattern(credential[1])){
             foundUser=repository.getUserByEmail(credential[1]);
             if (foundUser.isPresent()) {
-                setDataToSecurityContext(foundUser.get());
                 return credential[1].equals(foundUser.get().getEmail())
                         && credential[2].equals(foundUser.get().getPassword());
             }
@@ -43,19 +42,11 @@ public class UserServiceImpl<T extends User>
         }else {
             foundUser= Optional.ofNullable(repository.getUserByUsername(credential[0]));
             if (foundUser.isPresent()) {
-                setDataToSecurityContext(foundUser.get());
                 return credential[0].equals(foundUser.get().getUsername())
                         && credential[2].equals(foundUser.get().getPassword());
             }
         }
         return false;
-    }
-
-    private void setDataToSecurityContext(T t) {
-        SecurityContext.id=t.getId();
-        SecurityContext.username=t.getUsername() ;
-        SecurityContext.email=t.getEmail();
-        SecurityContext.password=t.getPassword();
     }
 
     @Override
