@@ -5,8 +5,11 @@ import erpSystem.entity.Student;
 import erpSystem.repository.StudentRepository;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
+import javax.persistence.TypedQuery;
+import java.util.Optional;
 
-public class StudentRepositoryImpl extends BaseRepositoryImpl<Student, Long> implements StudentRepository {
+public class StudentRepositoryImpl extends UserRepositoryImpl<Student> implements StudentRepository {
     public StudentRepositoryImpl(EntityManager em) {
         super(em);
     }
@@ -15,4 +18,5 @@ public class StudentRepositoryImpl extends BaseRepositoryImpl<Student, Long> imp
     public Class<Student> getEntityClass() {
         return Student.class;
     }
+
 }
