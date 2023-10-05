@@ -1,0 +1,1724 @@
+2023-10-05 06:03:12.300 DEBUG Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+2023-10-05 06:03:12.380 DEBUG Located and parsed 1 persistence units; checking each
+2023-10-05 06:03:12.380 DEBUG Checking persistence-unit [name=FileSystem, explicit-provider=org.hibernate.jpa.HibernatePersistenceProvider] against incoming persistence unit name [FileSystem]
+2023-10-05 06:03:12.381 DEBUG Persistence-unit [FileSystem] requested PersistenceProvider [org.hibernate.jpa.HibernatePersistenceProvider]
+2023-10-05 06:03:12.385 DEBUG PersistenceUnitInfo [
+	name: FileSystem
+	persistence provider classname: org.hibernate.jpa.HibernatePersistenceProvider
+	classloader: null
+	excludeUnlistedClasses: false
+	JTA datasource: null
+	Non JTA datasource: null
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Users/asus/Desktop/hw17_log_io/target/classes/
+	Shared Cache Mode: null
+	Validation Mode: null
+	Jar files URLs []
+	Managed classes names []
+	Mapping files names []
+	Properties [
+		javax.persistence.jdbc.user: postgres
+		hibernate.cache.use_query_cache: false
+		javax.persistence.jdbc.url: jdbc:postgresql://localhost:5432/postgres
+		hibernate.format_sql: true
+		jakarta.persistence.jdbc.driver: org.postgresql.Driver
+		hibernate.hbm2ddl.auto: create-drop
+		hibernate.show_sql: true
+		javax.persistence.jdbc.password: sam04897
+		jakarta.persistence.validation.mode: auto]
+2023-10-05 06:03:12.388 DEBUG Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2023-10-05 06:03:12.389 DEBUG Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2023-10-05 06:03:12.393 DEBUG Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2023-10-05 06:03:12.426 INFO  HHH000412: Hibernate ORM core version 5.6.0.Final
+2023-10-05 06:03:12.427 DEBUG HHH000206: hibernate.properties not found
+2023-10-05 06:03:12.582 DEBUG Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2023-10-05 06:03:12.595 DEBUG Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-10-05 06:03:12.596 DEBUG Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-10-05 06:03:12.610 INFO  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-10-05 06:03:12.745 DEBUG Adding type registration boolean -> org.hibernate.type.BooleanType@294a6b8e
+2023-10-05 06:03:12.745 DEBUG Adding type registration boolean -> org.hibernate.type.BooleanType@294a6b8e
+2023-10-05 06:03:12.745 DEBUG Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@294a6b8e
+2023-10-05 06:03:12.745 DEBUG Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4f25b795
+2023-10-05 06:03:12.746 DEBUG Adding type registration true_false -> org.hibernate.type.TrueFalseType@74bada02
+2023-10-05 06:03:12.746 DEBUG Adding type registration yes_no -> org.hibernate.type.YesNoType@78383390
+2023-10-05 06:03:12.747 DEBUG Adding type registration byte -> org.hibernate.type.ByteType@18a136ac
+2023-10-05 06:03:12.747 DEBUG Adding type registration byte -> org.hibernate.type.ByteType@18a136ac
+2023-10-05 06:03:12.747 DEBUG Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@18a136ac
+2023-10-05 06:03:12.748 DEBUG Adding type registration character -> org.hibernate.type.CharacterType@134d26af
+2023-10-05 06:03:12.748 DEBUG Adding type registration char -> org.hibernate.type.CharacterType@134d26af
+2023-10-05 06:03:12.748 DEBUG Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@134d26af
+2023-10-05 06:03:12.751 DEBUG Adding type registration short -> org.hibernate.type.ShortType@3a12c404
+2023-10-05 06:03:12.751 DEBUG Adding type registration short -> org.hibernate.type.ShortType@3a12c404
+2023-10-05 06:03:12.751 DEBUG Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3a12c404
+2023-10-05 06:03:12.752 DEBUG Adding type registration integer -> org.hibernate.type.IntegerType@4982cc36
+2023-10-05 06:03:12.752 DEBUG Adding type registration int -> org.hibernate.type.IntegerType@4982cc36
+2023-10-05 06:03:12.752 DEBUG Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@4982cc36
+2023-10-05 06:03:12.753 DEBUG Adding type registration long -> org.hibernate.type.LongType@22295ec4
+2023-10-05 06:03:12.753 DEBUG Adding type registration long -> org.hibernate.type.LongType@22295ec4
+2023-10-05 06:03:12.753 DEBUG Adding type registration java.lang.Long -> org.hibernate.type.LongType@22295ec4
+2023-10-05 06:03:12.754 DEBUG Adding type registration float -> org.hibernate.type.FloatType@5dcd8c7a
+2023-10-05 06:03:12.754 DEBUG Adding type registration float -> org.hibernate.type.FloatType@5dcd8c7a
+2023-10-05 06:03:12.754 DEBUG Adding type registration java.lang.Float -> org.hibernate.type.FloatType@5dcd8c7a
+2023-10-05 06:03:12.755 DEBUG Adding type registration double -> org.hibernate.type.DoubleType@8dbfffb
+2023-10-05 06:03:12.755 DEBUG Adding type registration double -> org.hibernate.type.DoubleType@8dbfffb
+2023-10-05 06:03:12.755 DEBUG Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@8dbfffb
+2023-10-05 06:03:12.756 DEBUG Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@324a0017
+2023-10-05 06:03:12.756 DEBUG Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@324a0017
+2023-10-05 06:03:12.757 DEBUG Adding type registration big_integer -> org.hibernate.type.BigIntegerType@22bac7bc
+2023-10-05 06:03:12.757 DEBUG Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@22bac7bc
+2023-10-05 06:03:12.758 DEBUG Adding type registration string -> org.hibernate.type.StringType@32f232a5
+2023-10-05 06:03:12.758 DEBUG Adding type registration java.lang.String -> org.hibernate.type.StringType@32f232a5
+2023-10-05 06:03:12.758 DEBUG Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2dc995f4
+2023-10-05 06:03:12.758 DEBUG Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@530712d
+2023-10-05 06:03:12.759 DEBUG Adding type registration url -> org.hibernate.type.UrlType@45fd9a4d
+2023-10-05 06:03:12.759 DEBUG Adding type registration java.net.URL -> org.hibernate.type.UrlType@45fd9a4d
+2023-10-05 06:03:12.760 DEBUG Adding type registration Duration -> org.hibernate.type.DurationType@16c63f5
+2023-10-05 06:03:12.760 DEBUG Adding type registration java.time.Duration -> org.hibernate.type.DurationType@16c63f5
+2023-10-05 06:03:12.760 DEBUG Adding type registration Instant -> org.hibernate.type.InstantType@74eb909f
+2023-10-05 06:03:12.760 DEBUG Adding type registration java.time.Instant -> org.hibernate.type.InstantType@74eb909f
+2023-10-05 06:03:12.761 DEBUG Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@13d9b21f
+2023-10-05 06:03:12.761 DEBUG Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@13d9b21f
+2023-10-05 06:03:12.762 DEBUG Adding type registration LocalDate -> org.hibernate.type.LocalDateType@687ef2e0
+2023-10-05 06:03:12.762 DEBUG Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@687ef2e0
+2023-10-05 06:03:12.763 DEBUG Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@497486b3
+2023-10-05 06:03:12.763 DEBUG Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@497486b3
+2023-10-05 06:03:12.764 DEBUG Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@635572a7
+2023-10-05 06:03:12.764 DEBUG Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@635572a7
+2023-10-05 06:03:12.765 DEBUG Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@222eb8aa
+2023-10-05 06:03:12.765 DEBUG Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@222eb8aa
+2023-10-05 06:03:12.766 DEBUG Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2a76840c
+2023-10-05 06:03:12.766 DEBUG Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2a76840c
+2023-10-05 06:03:12.767 DEBUG Adding type registration date -> org.hibernate.type.DateType@2d6764b2
+2023-10-05 06:03:12.767 DEBUG Adding type registration java.sql.Date -> org.hibernate.type.DateType@2d6764b2
+2023-10-05 06:03:12.767 DEBUG Adding type registration time -> org.hibernate.type.TimeType@5023bb8b
+2023-10-05 06:03:12.767 DEBUG Adding type registration java.sql.Time -> org.hibernate.type.TimeType@5023bb8b
+2023-10-05 06:03:12.768 DEBUG Adding type registration timestamp -> org.hibernate.type.TimestampType@63a270c9
+2023-10-05 06:03:12.768 DEBUG Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@63a270c9
+2023-10-05 06:03:12.768 DEBUG Adding type registration java.util.Date -> org.hibernate.type.TimestampType@63a270c9
+2023-10-05 06:03:12.769 DEBUG Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@614df0a4
+2023-10-05 06:03:12.770 DEBUG Adding type registration calendar -> org.hibernate.type.CalendarType@32193bea
+2023-10-05 06:03:12.770 DEBUG Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@32193bea
+2023-10-05 06:03:12.770 DEBUG Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@32193bea
+2023-10-05 06:03:12.771 DEBUG Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@906d29b
+2023-10-05 06:03:12.771 DEBUG Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@57abad67
+2023-10-05 06:03:12.772 DEBUG Adding type registration locale -> org.hibernate.type.LocaleType@2dca0d64
+2023-10-05 06:03:12.772 DEBUG Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@2dca0d64
+2023-10-05 06:03:12.773 DEBUG Adding type registration currency -> org.hibernate.type.CurrencyType@1cdc4c27
+2023-10-05 06:03:12.773 DEBUG Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1cdc4c27
+2023-10-05 06:03:12.773 DEBUG Adding type registration timezone -> org.hibernate.type.TimeZoneType@628c4ac0
+2023-10-05 06:03:12.773 DEBUG Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@628c4ac0
+2023-10-05 06:03:12.774 DEBUG Adding type registration class -> org.hibernate.type.ClassType@62e20a76
+2023-10-05 06:03:12.774 DEBUG Adding type registration java.lang.Class -> org.hibernate.type.ClassType@62e20a76
+2023-10-05 06:03:12.775 DEBUG Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@75cd8043
+2023-10-05 06:03:12.775 DEBUG Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@75cd8043
+2023-10-05 06:03:12.775 DEBUG Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@9ef8eb7
+2023-10-05 06:03:12.776 DEBUG Adding type registration binary -> org.hibernate.type.BinaryType@4b41e4dd
+2023-10-05 06:03:12.776 DEBUG Adding type registration byte[] -> org.hibernate.type.BinaryType@4b41e4dd
+2023-10-05 06:03:12.776 DEBUG Adding type registration [B -> org.hibernate.type.BinaryType@4b41e4dd
+2023-10-05 06:03:12.777 DEBUG Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@66746f57
+2023-10-05 06:03:12.777 DEBUG Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@66746f57
+2023-10-05 06:03:12.777 DEBUG Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@66746f57
+2023-10-05 06:03:12.777 DEBUG Adding type registration row_version -> org.hibernate.type.RowVersionType@767e20cf
+2023-10-05 06:03:12.778 DEBUG Adding type registration image -> org.hibernate.type.ImageType@10ded6a9
+2023-10-05 06:03:12.778 DEBUG Adding type registration characters -> org.hibernate.type.CharArrayType@373ebf74
+2023-10-05 06:03:12.778 DEBUG Adding type registration char[] -> org.hibernate.type.CharArrayType@373ebf74
+2023-10-05 06:03:12.778 DEBUG Adding type registration [C -> org.hibernate.type.CharArrayType@373ebf74
+2023-10-05 06:03:12.779 DEBUG Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@5ccbeb64
+2023-10-05 06:03:12.779 DEBUG Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@5ccbeb64
+2023-10-05 06:03:12.779 DEBUG Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@5ccbeb64
+2023-10-05 06:03:12.779 DEBUG Adding type registration text -> org.hibernate.type.TextType@3243b914
+2023-10-05 06:03:12.780 DEBUG Adding type registration ntext -> org.hibernate.type.NTextType@4dc8caa7
+2023-10-05 06:03:12.781 DEBUG Adding type registration blob -> org.hibernate.type.BlobType@1338fb5
+2023-10-05 06:03:12.781 DEBUG Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@1338fb5
+2023-10-05 06:03:12.781 DEBUG Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@7ca33c24
+2023-10-05 06:03:12.782 DEBUG Adding type registration clob -> org.hibernate.type.ClobType@18920cc
+2023-10-05 06:03:12.782 DEBUG Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@18920cc
+2023-10-05 06:03:12.783 DEBUG Adding type registration nclob -> org.hibernate.type.NClobType@3700ec9c
+2023-10-05 06:03:12.783 DEBUG Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@3700ec9c
+2023-10-05 06:03:12.784 DEBUG Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@1d470d0
+2023-10-05 06:03:12.784 DEBUG Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@47f4e407
+2023-10-05 06:03:12.785 DEBUG Adding type registration serializable -> org.hibernate.type.SerializableType@2b0f373b
+2023-10-05 06:03:12.787 DEBUG Adding type registration object -> org.hibernate.type.ObjectType@3e821657
+2023-10-05 06:03:12.787 DEBUG Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@3e821657
+2023-10-05 06:03:12.787 DEBUG Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@4fce136b
+2023-10-05 06:03:12.787 DEBUG Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@4aa83f4f
+2023-10-05 06:03:12.787 DEBUG Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@43b6123e
+2023-10-05 06:03:12.788 DEBUG Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@260e86a1
+2023-10-05 06:03:12.788 DEBUG Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@19648c40
+2023-10-05 06:03:12.788 DEBUG Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@12bd8a64
+2023-10-05 06:03:12.788 DEBUG Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@61e94def
+2023-10-05 06:03:12.788 DEBUG Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@3300f4fd
+2023-10-05 06:03:12.797 DEBUG Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@5cdd09b1] into BootstrapContext; was [null]
+2023-10-05 06:03:12.797 DEBUG Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@7e8dcdaa] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@681a8b4e]
+2023-10-05 06:03:12.859 DEBUG Injecting JPA temp ClassLoader [null] into BootstrapContext; was [null]
+2023-10-05 06:03:12.859 DEBUG ClassLoaderAccessImpl#injectTempClassLoader(null) [was null]
+2023-10-05 06:03:12.866 DEBUG Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2023-10-05 06:03:12.866 DEBUG Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2023-10-05 06:03:12.867 DEBUG Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2023-10-05 06:03:12.867 DEBUG Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2023-10-05 06:03:12.867 DEBUG Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2023-10-05 06:03:12.868 DEBUG Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2023-10-05 06:03:12.868 DEBUG Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2023-10-05 06:03:12.869 DEBUG Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2023-10-05 06:03:12.869 DEBUG Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2023-10-05 06:03:12.870 DEBUG Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2023-10-05 06:03:12.870 DEBUG Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2023-10-05 06:03:12.870 DEBUG Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2023-10-05 06:03:12.870 DEBUG Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2023-10-05 06:03:12.871 DEBUG Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2023-10-05 06:03:12.875 WARN  HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2023-10-05 06:03:12.875 DEBUG No driver class specified
+2023-10-05 06:03:12.875 INFO  HHH10001005: using driver [null] at URL [jdbc:postgresql://localhost:5432/postgres]
+2023-10-05 06:03:12.875 INFO  HHH10001001: Connection properties: {password=sam04897, user=postgres}
+2023-10-05 06:03:12.875 INFO  HHH10001003: Autocommit mode: false
+2023-10-05 06:03:12.877 DEBUG Initializing Connection pool with 1 Connections
+2023-10-05 06:03:12.877 INFO  HHH000115: Hibernate connection pool size: 20 (min=1)
+2023-10-05 06:03:13.072 DEBUG Database ->
+       name : PostgreSQL
+    version : 15.2
+      major : 15
+      minor : 2
+2023-10-05 06:03:13.072 DEBUG Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.6.0
+      major : 42
+      minor : 6
+2023-10-05 06:03:13.072 DEBUG JDBC version : 4.2
+2023-10-05 06:03:13.092 INFO  HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-10-05 06:03:13.102 DEBUG JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2023-10-05 06:03:13.123 DEBUG Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2023-10-05 06:03:13.124 DEBUG Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@64a1923a
+2023-10-05 06:03:13.124 DEBUG Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@64a1923a
+2023-10-05 06:03:13.124 DEBUG HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@75cd8043
+2023-10-05 06:03:13.126 DEBUG Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@23aae55] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@5f574cc2]
+2023-10-05 06:03:13.162 DEBUG Skipping explicit MappedSuperclass q2.base.entity.BaseEntity, the class will be discovered analyzing the implementing class
+2023-10-05 06:03:13.168 DEBUG Binding entity from annotated class: q2.entity.StudentCourseRating
+2023-10-05 06:03:13.181 DEBUG Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2023-10-05 06:03:13.184 DEBUG Import with entity name StudentCourseRating
+2023-10-05 06:03:13.186 DEBUG Bind entity q2.entity.StudentCourseRating on table StudentCourseRating
+2023-10-05 06:03:13.205 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(StudentCourseRating), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.207 DEBUG Not known whether passed class name [q2.entity.StudentCourseRating] is safe
+2023-10-05 06:03:13.207 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : q2.entity.StudentCourseRating
+2023-10-05 06:03:13.208 DEBUG MetadataSourceProcessor property id with lazy=false
+2023-10-05 06:03:13.210 DEBUG Attempting to locate auto-apply AttributeConverter for property [q2.entity.StudentCourseRating:id]
+2023-10-05 06:03:13.211 DEBUG building SimpleValue for id
+2023-10-05 06:03:13.212 DEBUG Building property id
+2023-10-05 06:03:13.216 DEBUG #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2023-10-05 06:03:13.216 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(StudentCourseRating), mappingColumn=comment, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.216 DEBUG MetadataSourceProcessor property comment with lazy=false
+2023-10-05 06:03:13.217 DEBUG Attempting to locate auto-apply AttributeConverter for property [q2.entity.StudentCourseRating:comment]
+2023-10-05 06:03:13.217 DEBUG building SimpleValue for comment
+2023-10-05 06:03:13.217 DEBUG Building property comment
+2023-10-05 06:03:13.217 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(StudentCourseRating), mappingColumn=rating, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.217 DEBUG MetadataSourceProcessor property rating with lazy=false
+2023-10-05 06:03:13.217 DEBUG Attempting to locate auto-apply AttributeConverter for property [q2.entity.StudentCourseRating:rating]
+2023-10-05 06:03:13.217 DEBUG building SimpleValue for rating
+2023-10-05 06:03:13.217 DEBUG Building property rating
+2023-10-05 06:03:13.217 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(StudentCourseRating), mappingColumn=timestamp, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.217 DEBUG MetadataSourceProcessor property timestamp with lazy=false
+2023-10-05 06:03:13.217 DEBUG Attempting to locate auto-apply AttributeConverter for property [q2.entity.StudentCourseRating:timestamp]
+2023-10-05 06:03:13.218 DEBUG building SimpleValue for timestamp
+2023-10-05 06:03:13.218 DEBUG Building property timestamp
+2023-10-05 06:03:13.219 DEBUG Binding entity from annotated class: q1.entity.Person
+2023-10-05 06:03:13.219 DEBUG Import with entity name Person
+2023-10-05 06:03:13.219 DEBUG Bind entity q1.entity.Person on table persons
+2023-10-05 06:03:13.220 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(persons), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.220 DEBUG Not known whether passed class name [q1.entity.Person] is safe
+2023-10-05 06:03:13.220 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : q1.entity.Person
+2023-10-05 06:03:13.220 DEBUG MetadataSourceProcessor property id with lazy=false
+2023-10-05 06:03:13.220 DEBUG Attempting to locate auto-apply AttributeConverter for property [q1.entity.Person:id]
+2023-10-05 06:03:13.220 DEBUG building SimpleValue for id
+2023-10-05 06:03:13.220 DEBUG Building property id
+2023-10-05 06:03:13.220 DEBUG #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2023-10-05 06:03:13.220 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(persons), mappingColumn=date_of_birth, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.220 DEBUG MetadataSourceProcessor property dateOfBirth with lazy=false
+2023-10-05 06:03:13.220 DEBUG Attempting to locate auto-apply AttributeConverter for property [q1.entity.Person:dateOfBirth]
+2023-10-05 06:03:13.221 DEBUG building SimpleValue for dateOfBirth
+2023-10-05 06:03:13.221 DEBUG Building property dateOfBirth
+2023-10-05 06:03:13.221 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(persons), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.221 DEBUG MetadataSourceProcessor property firstName with lazy=false
+2023-10-05 06:03:13.221 DEBUG Attempting to locate auto-apply AttributeConverter for property [q1.entity.Person:firstName]
+2023-10-05 06:03:13.221 DEBUG building SimpleValue for firstName
+2023-10-05 06:03:13.221 DEBUG Building property firstName
+2023-10-05 06:03:13.221 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(persons), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.221 DEBUG MetadataSourceProcessor property lastName with lazy=false
+2023-10-05 06:03:13.221 DEBUG Attempting to locate auto-apply AttributeConverter for property [q1.entity.Person:lastName]
+2023-10-05 06:03:13.221 DEBUG building SimpleValue for lastName
+2023-10-05 06:03:13.221 DEBUG Building property lastName
+2023-10-05 06:03:13.221 DEBUG Binding entity from annotated class: q1.entity.Student
+2023-10-05 06:03:13.222 DEBUG Import with entity name Student
+2023-10-05 06:03:13.222 DEBUG Bind entity q1.entity.Student on table Student
+2023-10-05 06:03:13.223 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.DenormalizedTable(Student), mappingColumn=entry_year, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.223 DEBUG MetadataSourceProcessor property entryYear with lazy=false
+2023-10-05 06:03:13.223 DEBUG Attempting to locate auto-apply AttributeConverter for property [q1.entity.Student:entryYear]
+2023-10-05 06:03:13.224 DEBUG building SimpleValue for entryYear
+2023-10-05 06:03:13.224 DEBUG Building property entryYear
+2023-10-05 06:03:13.224 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.DenormalizedTable(Student), mappingColumn=field_of_study, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.224 DEBUG MetadataSourceProcessor property fieldOfStudy with lazy=false
+2023-10-05 06:03:13.224 DEBUG Attempting to locate auto-apply AttributeConverter for property [q1.entity.Student:fieldOfStudy]
+2023-10-05 06:03:13.224 DEBUG building SimpleValue for fieldOfStudy
+2023-10-05 06:03:13.224 DEBUG Building property fieldOfStudy
+2023-10-05 06:03:13.224 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.DenormalizedTable(Student), mappingColumn=student_id, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.224 DEBUG MetadataSourceProcessor property studentId with lazy=false
+2023-10-05 06:03:13.224 DEBUG Attempting to locate auto-apply AttributeConverter for property [q1.entity.Student:studentId]
+2023-10-05 06:03:13.224 DEBUG building SimpleValue for studentId
+2023-10-05 06:03:13.224 DEBUG Building property studentId
+2023-10-05 06:03:13.224 DEBUG Binding entity from annotated class: q2.entity.Studentt
+2023-10-05 06:03:13.224 DEBUG Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2023-10-05 06:03:13.224 DEBUG Import with entity name Studentt
+2023-10-05 06:03:13.225 DEBUG Bind entity q2.entity.Studentt on table Studentt
+2023-10-05 06:03:13.225 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Studentt), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.225 DEBUG Not known whether passed class name [q2.entity.Studentt] is safe
+2023-10-05 06:03:13.225 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : q2.entity.Studentt
+2023-10-05 06:03:13.225 DEBUG MetadataSourceProcessor property id with lazy=false
+2023-10-05 06:03:13.225 DEBUG Attempting to locate auto-apply AttributeConverter for property [q2.entity.Studentt:id]
+2023-10-05 06:03:13.225 DEBUG building SimpleValue for id
+2023-10-05 06:03:13.225 DEBUG Building property id
+2023-10-05 06:03:13.225 DEBUG #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2023-10-05 06:03:13.225 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Studentt), mappingColumn=student_name, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.226 DEBUG MetadataSourceProcessor property studentName with lazy=false
+2023-10-05 06:03:13.226 DEBUG Attempting to locate auto-apply AttributeConverter for property [q2.entity.Studentt:studentName]
+2023-10-05 06:03:13.226 DEBUG building SimpleValue for studentName
+2023-10-05 06:03:13.226 DEBUG Building property studentName
+2023-10-05 06:03:13.226 DEBUG Binding entity from annotated class: q1.entity.Teacher
+2023-10-05 06:03:13.226 DEBUG Import with entity name Teacher
+2023-10-05 06:03:13.226 DEBUG Bind entity q1.entity.Teacher on table Teacher
+2023-10-05 06:03:13.227 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.DenormalizedTable(Teacher), mappingColumn=degree, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.227 DEBUG MetadataSourceProcessor property degree with lazy=false
+2023-10-05 06:03:13.227 DEBUG Attempting to locate auto-apply AttributeConverter for property [q1.entity.Teacher:degree]
+2023-10-05 06:03:13.227 DEBUG building SimpleValue for degree
+2023-10-05 06:03:13.227 DEBUG Building property degree
+2023-10-05 06:03:13.227 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.DenormalizedTable(Teacher), mappingColumn=masterdegree, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.227 DEBUG MetadataSourceProcessor property masterdegree with lazy=false
+2023-10-05 06:03:13.227 DEBUG Attempting to locate auto-apply AttributeConverter for property [q1.entity.Teacher:masterdegree]
+2023-10-05 06:03:13.230 DEBUG building SimpleValue for masterdegree
+2023-10-05 06:03:13.230 DEBUG Building property masterdegree
+2023-10-05 06:03:13.230 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.DenormalizedTable(Teacher), mappingColumn=teacher_id, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.230 DEBUG MetadataSourceProcessor property teacherId with lazy=false
+2023-10-05 06:03:13.230 DEBUG Attempting to locate auto-apply AttributeConverter for property [q1.entity.Teacher:teacherId]
+2023-10-05 06:03:13.230 DEBUG building SimpleValue for teacherId
+2023-10-05 06:03:13.230 DEBUG Building property teacherId
+2023-10-05 06:03:13.230 DEBUG Binding entity from annotated class: q2.entity.Course
+2023-10-05 06:03:13.230 DEBUG Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2023-10-05 06:03:13.230 DEBUG Import with entity name Course
+2023-10-05 06:03:13.230 DEBUG Bind entity q2.entity.Course on table Course
+2023-10-05 06:03:13.231 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Course), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.231 DEBUG Not known whether passed class name [q2.entity.Course] is safe
+2023-10-05 06:03:13.231 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : q2.entity.Course
+2023-10-05 06:03:13.231 DEBUG MetadataSourceProcessor property id with lazy=false
+2023-10-05 06:03:13.231 DEBUG Attempting to locate auto-apply AttributeConverter for property [q2.entity.Course:id]
+2023-10-05 06:03:13.231 DEBUG building SimpleValue for id
+2023-10-05 06:03:13.231 DEBUG Building property id
+2023-10-05 06:03:13.231 DEBUG #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2023-10-05 06:03:13.231 DEBUG Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Course), mappingColumn=course_name, insertable=true, updatable=true, unique=false}
+2023-10-05 06:03:13.231 DEBUG MetadataSourceProcessor property courseName with lazy=false
+2023-10-05 06:03:13.231 DEBUG Attempting to locate auto-apply AttributeConverter for property [q2.entity.Course:courseName]
+2023-10-05 06:03:13.232 DEBUG building SimpleValue for courseName
+2023-10-05 06:03:13.232 DEBUG Building property courseName
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for id
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for comment
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for rating
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for timestamp
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for id
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for dateOfBirth
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for firstName
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for lastName
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for entryYear
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for fieldOfStudy
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for studentId
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for id
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for studentName
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for degree
+2023-10-05 06:03:13.233 DEBUG Starting fillSimpleValue for masterdegree
+2023-10-05 06:03:13.234 DEBUG Starting fillSimpleValue for teacherId
+2023-10-05 06:03:13.234 DEBUG Starting fillSimpleValue for id
+2023-10-05 06:03:13.234 DEBUG Starting fillSimpleValue for courseName
+2023-10-05 06:03:13.235 DEBUG Forcing column [id] to be non-null as it is part of the primary key for table [studentcourserating]
+2023-10-05 06:03:13.235 DEBUG Forcing column [id] to be non-null as it is part of the primary key for table [persons]
+2023-10-05 06:03:13.235 DEBUG Forcing column [id] to be non-null as it is part of the primary key for table [studentt]
+2023-10-05 06:03:13.235 DEBUG Forcing column [id] to be non-null as it is part of the primary key for table [course]
+2023-10-05 06:03:13.271 DEBUG Building session factory
+2023-10-05 06:03:13.272 DEBUG SessionFactory name : null
+2023-10-05 06:03:13.272 DEBUG Automatic flush during beforeCompletion(): enabled
+2023-10-05 06:03:13.272 DEBUG Automatic session close at end of transaction: disabled
+2023-10-05 06:03:13.272 DEBUG Statistics: disabled
+2023-10-05 06:03:13.272 DEBUG Deleted entity synthetic identifier rollback: disabled
+2023-10-05 06:03:13.272 DEBUG Default entity-mode: pojo
+2023-10-05 06:03:13.272 DEBUG Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2023-10-05 06:03:13.273 DEBUG Allow initialization of lazy state outside session : disabled
+2023-10-05 06:03:13.273 DEBUG Using BatchFetchStyle : LEGACY
+2023-10-05 06:03:13.273 DEBUG Default batch fetch size: -1
+2023-10-05 06:03:13.273 DEBUG Maximum outer join fetch depth: null
+2023-10-05 06:03:13.273 DEBUG Default null ordering: NONE
+2023-10-05 06:03:13.273 DEBUG Order SQL updates by primary key: disabled
+2023-10-05 06:03:13.273 DEBUG Order SQL inserts for batching: disabled
+2023-10-05 06:03:13.273 DEBUG multi-tenancy strategy : NONE
+2023-10-05 06:03:13.273 DEBUG JTA Track by Thread: enabled
+2023-10-05 06:03:13.273 DEBUG Query language substitutions: {}
+2023-10-05 06:03:13.273 DEBUG Named query checking : enabled
+2023-10-05 06:03:13.273 DEBUG Second-level cache: disabled
+2023-10-05 06:03:13.273 DEBUG Second-level query cache: disabled
+2023-10-05 06:03:13.273 DEBUG Second-level query cache factory: null
+2023-10-05 06:03:13.273 DEBUG Second-level cache region prefix: null
+2023-10-05 06:03:13.273 DEBUG Optimize second-level cache for minimal puts: disabled
+2023-10-05 06:03:13.273 DEBUG Structured second-level cache entries: disabled
+2023-10-05 06:03:13.274 DEBUG Second-level cache direct-reference entries: disabled
+2023-10-05 06:03:13.274 DEBUG Automatic eviction of collection cache: disabled
+2023-10-05 06:03:13.274 DEBUG JDBC batch size: 15
+2023-10-05 06:03:13.274 DEBUG JDBC batch updates for versioned data: enabled
+2023-10-05 06:03:13.274 DEBUG Scrollable result sets: enabled
+2023-10-05 06:03:13.274 DEBUG Wrap result sets: disabled
+2023-10-05 06:03:13.274 DEBUG JDBC3 getGeneratedKeys(): enabled
+2023-10-05 06:03:13.274 DEBUG JDBC result set fetch size: null
+2023-10-05 06:03:13.274 DEBUG Connection release mode: AFTER_TRANSACTION
+2023-10-05 06:03:13.274 DEBUG Generate SQL with comments: disabled
+2023-10-05 06:03:13.274 DEBUG JPA compliance - query : disabled
+2023-10-05 06:03:13.274 DEBUG JPA compliance - closed-handling : disabled
+2023-10-05 06:03:13.274 DEBUG JPA compliance - lists : disabled
+2023-10-05 06:03:13.274 DEBUG JPA compliance - transactions : disabled
+2023-10-05 06:03:13.286 DEBUG Not known whether passed class name [q1.entity.Student] is safe
+2023-10-05 06:03:13.286 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : q1.entity.Student
+2023-10-05 06:03:13.287 DEBUG Not known whether passed class name [q1.entity.Teacher] is safe
+2023-10-05 06:03:13.287 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : q1.entity.Teacher
+2023-10-05 06:03:13.326 DEBUG EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2023-10-05 06:03:13.327 DEBUG EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2023-10-05 06:03:13.336 DEBUG Session factory constructed with filter configurations : {}
+2023-10-05 06:03:13.337 DEBUG Instantiating session factory with properties: {hibernate.format_sql=true, java.specification.version=20, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1252, java.class.path=C:\Users\asus\Desktop\hw17_log_io\target\classes;C:\Users\asus\.m2\repository\org\hibernate\hibernate-core\5.6.0.Final\hibernate-core-5.6.0.Final.jar;C:\Users\asus\.m2\repository\org\jboss\logging\jboss-logging\3.4.2.Final\jboss-logging-3.4.2.Final.jar;C:\Users\asus\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\asus\.m2\repository\net\bytebuddy\byte-buddy\1.11.20\byte-buddy-1.11.20.jar;C:\Users\asus\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\asus\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\asus\.m2\repository\org\jboss\jandex\2.2.3.Final\jandex-2.2.3.Final.jar;C:\Users\asus\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\asus\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\asus\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\asus\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\asus\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\asus\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\asus\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\asus\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\asus\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\asus\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\asus\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\asus\.m2\repository\ch\qos\logback\logback-classic\1.3.5\logback-classic-1.3.5.jar;C:\Users\asus\.m2\repository\ch\qos\logback\logback-core\1.3.5\logback-core-1.3.5.jar;C:\Users\asus\.m2\repository\org\slf4j\slf4j-api\2.0.4\slf4j-api-2.0.4.jar;C:\Users\asus\.m2\repository\com\opencsv\opencsv\5.7.1\opencsv-5.7.1.jar;C:\Users\asus\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\asus\.m2\repository\org\apache\commons\commons-text\1.10.0\commons-text-1.10.0.jar;C:\Users\asus\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\asus\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\asus\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\asus\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=GMT+03:30, javax.persistence.jdbc.url=jdbc:postgresql://localhost:5432/postgres, javax.persistence.jdbc.user=****, java.vm.specification.version=20, os.name=Windows 10, jakarta.persistence.jdbc.password=****, sun.java.launcher=SUN_STANDARD, user.country=US, local.setting.IS_JTA_TXN_COORD=false, sun.boot.library.path=C:\Program Files\Java\jdk-20\bin, sun.java.command=q2.Main, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\asus, user.language=en, sun.stderr.encoding=UTF-8, java.specification.vendor=Oracle Corporation, java.version.date=2023-03-21, java.home=C:\Program Files\Java\jdk-20, file.separator=\, java.vm.compressedOopsMode=Zero based, jakarta.persistence.jdbc.user=****, sun.stdout.encoding=UTF-8, line.separator=
+, hibernate.persistenceUnitName=FileSystem, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, jakarta.persistence.validation.mode=auto, hibernate.hbm2ddl.auto=create-drop, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=20+36-2344, user.name=asus, hibernate.cache.use_query_cache=false, stdout.encoding=UTF-8, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:postgresql://localhost:5432/postgres, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=FileSystem, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\asus\AppData\Local\Temp\, java.version=20, user.dir=C:\Users\asus\Desktop\hw17_log_io, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, sun.os.patch.level=, jakarta.persistence.jdbc.url=jdbc:postgresql://localhost:5432/postgres, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@4b54af3d, native.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk-20\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Java\jdk1.8.0_241\bin;d:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk-20\bin;D:\Program Files\apache-maven-3.9.2-bin\apache-maven-3.9.2\bin;C:\Program Files\Git\cmd;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Users\asus\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\asus\AppData\Local\Programs\Python\Python38-32\;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA 2023.1\bin;;., stderr.encoding=UTF-8, java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=20+36-2344, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, javax.persistence.jdbc.password=****, java.class.version=64.0}
+2023-10-05 06:03:13.347 DEBUG Skipping JACC integration as it was not enabled
+2023-10-05 06:03:13.353 DEBUG Using ORDINAL-based conversion for Enum q1.entity.Masterdegree
+2023-10-05 06:03:13.354 DEBUG Instantiated session factory
+2023-10-05 06:03:13.354 DEBUG Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@23aae55] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@3910fe11]
+2023-10-05 06:03:13.403 DEBUG Not known whether passed class name [q2.entity.StudentCourseRating] is safe
+2023-10-05 06:03:13.403 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : q2.entity.StudentCourseRating
+2023-10-05 06:03:13.555 DEBUG Not known whether passed class name [q1.entity.Student] is safe
+2023-10-05 06:03:13.555 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : q1.entity.Student
+2023-10-05 06:03:13.570 DEBUG Not known whether passed class name [q2.entity.Studentt] is safe
+2023-10-05 06:03:13.570 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : q2.entity.Studentt
+2023-10-05 06:03:13.579 DEBUG Not known whether passed class name [q1.entity.Teacher] is safe
+2023-10-05 06:03:13.579 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : q1.entity.Teacher
+2023-10-05 06:03:13.592 DEBUG Not known whether passed class name [q1.entity.Person] is safe
+2023-10-05 06:03:13.592 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : q1.entity.Person
+2023-10-05 06:03:13.600 DEBUG Not known whether passed class name [q2.entity.Course] is safe
+2023-10-05 06:03:13.600 DEBUG No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : q2.entity.Course
+2023-10-05 06:03:13.612 DEBUG Static SQL for entity: q2.entity.StudentCourseRating
+2023-10-05 06:03:13.612 DEBUG  Version select: select id from StudentCourseRating where id =?
+2023-10-05 06:03:13.612 DEBUG  Snapshot select: select studentcou_.id, studentcou_.comment as comment2_3_, studentcou_.rating as rating3_3_, studentcou_.timestamp as timestam4_3_ from StudentCourseRating studentcou_ where studentcou_.id=?
+2023-10-05 06:03:13.612 DEBUG  Insert 0: insert into StudentCourseRating (comment, rating, timestamp, id) values (?, ?, ?, ?)
+2023-10-05 06:03:13.612 DEBUG  Update 0: update StudentCourseRating set comment=?, rating=?, timestamp=? where id=?
+2023-10-05 06:03:13.612 DEBUG  Delete 0: delete from StudentCourseRating where id=?
+2023-10-05 06:03:13.632 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4375b013]
+2023-10-05 06:03:13.633 DEBUG Visiting attribute path : comment
+2023-10-05 06:03:13.633 DEBUG Visiting attribute path : rating
+2023-10-05 06:03:13.633 DEBUG Visiting attribute path : timestamp
+2023-10-05 06:03:13.633 DEBUG Building LoadPlan...
+2023-10-05 06:03:13.640 DEBUG processing queryspace <gen:0>
+2023-10-05 06:03:13.642 DEBUG LoadPlan(entity=q2.entity.StudentCourseRating)
+    - Returns
+       - EntityReturnImpl(entity=q2.entity.StudentCourseRating, querySpaceUid=<gen:0>, path=q2.entity.StudentCourseRating)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=q2.entity.StudentCourseRating)
+          - SQL table alias mapping - studentcou0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+
+2023-10-05 06:03:13.643 DEBUG Static select for entity q2.entity.StudentCourseRating [NONE]: select studentcou0_.id as id1_3_0_, studentcou0_.comment as comment2_3_0_, studentcou0_.rating as rating3_3_0_, studentcou0_.timestamp as timestam4_3_0_ from StudentCourseRating studentcou0_ where studentcou0_.id=?
+2023-10-05 06:03:13.644 DEBUG Static SQL for entity: q1.entity.Student
+2023-10-05 06:03:13.644 DEBUG  Version select: select id from Student where id =?
+2023-10-05 06:03:13.644 DEBUG  Snapshot select: select student_.id, student_.date_of_birth as date_of_2_1_, student_.first_name as first_na3_1_, student_.last_name as last_nam4_1_, student_.entry_year as entry_ye1_2_, student_.field_of_study as field_of2_2_, student_.student_id as student_3_2_ from Student student_ where student_.id=?
+2023-10-05 06:03:13.644 DEBUG  Insert 0: insert into Student (date_of_birth, first_name, last_name, entry_year, field_of_study, student_id, id) values (?, ?, ?, ?, ?, ?, ?)
+2023-10-05 06:03:13.644 DEBUG  Update 0: update Student set date_of_birth=?, first_name=?, last_name=?, entry_year=?, field_of_study=?, student_id=? where id=?
+2023-10-05 06:03:13.644 DEBUG  Delete 0: delete from Student where id=?
+2023-10-05 06:03:13.644 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@48976e6d]
+2023-10-05 06:03:13.644 DEBUG Visiting attribute path : dateOfBirth
+2023-10-05 06:03:13.644 DEBUG Visiting attribute path : firstName
+2023-10-05 06:03:13.644 DEBUG Visiting attribute path : lastName
+2023-10-05 06:03:13.644 DEBUG Visiting attribute path : entryYear
+2023-10-05 06:03:13.644 DEBUG Visiting attribute path : fieldOfStudy
+2023-10-05 06:03:13.644 DEBUG Visiting attribute path : studentId
+2023-10-05 06:03:13.644 DEBUG Building LoadPlan...
+2023-10-05 06:03:13.644 DEBUG processing queryspace <gen:0>
+2023-10-05 06:03:13.645 DEBUG LoadPlan(entity=q1.entity.Student)
+    - Returns
+       - EntityReturnImpl(entity=q1.entity.Student, querySpaceUid=<gen:0>, path=q1.entity.Student)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=q1.entity.Student)
+          - SQL table alias mapping - student0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2023-10-05 06:03:13.645 DEBUG Static select for entity q1.entity.Student [NONE]: select student0_.id as id1_1_0_, student0_.date_of_birth as date_of_2_1_0_, student0_.first_name as first_na3_1_0_, student0_.last_name as last_nam4_1_0_, student0_.entry_year as entry_ye1_2_0_, student0_.field_of_study as field_of2_2_0_, student0_.student_id as student_3_2_0_ from Student student0_ where student0_.id=?
+2023-10-05 06:03:13.645 DEBUG Static SQL for entity: q2.entity.Studentt
+2023-10-05 06:03:13.645 DEBUG  Version select: select id from Studentt where id =?
+2023-10-05 06:03:13.645 DEBUG  Snapshot select: select studentt_.id, studentt_.student_name as student_2_4_ from Studentt studentt_ where studentt_.id=?
+2023-10-05 06:03:13.645 DEBUG  Insert 0: insert into Studentt (student_name, id) values (?, ?)
+2023-10-05 06:03:13.645 DEBUG  Update 0: update Studentt set student_name=? where id=?
+2023-10-05 06:03:13.645 DEBUG  Delete 0: delete from Studentt where id=?
+2023-10-05 06:03:13.645 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@70211df5]
+2023-10-05 06:03:13.645 DEBUG Visiting attribute path : studentName
+2023-10-05 06:03:13.645 DEBUG Building LoadPlan...
+2023-10-05 06:03:13.645 DEBUG processing queryspace <gen:0>
+2023-10-05 06:03:13.645 DEBUG LoadPlan(entity=q2.entity.Studentt)
+    - Returns
+       - EntityReturnImpl(entity=q2.entity.Studentt, querySpaceUid=<gen:0>, path=q2.entity.Studentt)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=q2.entity.Studentt)
+          - SQL table alias mapping - studentt0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+
+2023-10-05 06:03:13.645 DEBUG Static select for entity q2.entity.Studentt [NONE]: select studentt0_.id as id1_4_0_, studentt0_.student_name as student_2_4_0_ from Studentt studentt0_ where studentt0_.id=?
+2023-10-05 06:03:13.645 DEBUG Static SQL for entity: q1.entity.Teacher
+2023-10-05 06:03:13.645 DEBUG  Version select: select id from Teacher where id =?
+2023-10-05 06:03:13.645 DEBUG  Snapshot select: select teacher_.id, teacher_.date_of_birth as date_of_2_1_, teacher_.first_name as first_na3_1_, teacher_.last_name as last_nam4_1_, teacher_.degree as degree1_5_, teacher_.masterdegree as masterde2_5_, teacher_.teacher_id as teacher_3_5_ from Teacher teacher_ where teacher_.id=?
+2023-10-05 06:03:13.645 DEBUG  Insert 0: insert into Teacher (date_of_birth, first_name, last_name, degree, masterdegree, teacher_id, id) values (?, ?, ?, ?, ?, ?, ?)
+2023-10-05 06:03:13.645 DEBUG  Update 0: update Teacher set date_of_birth=?, first_name=?, last_name=?, degree=?, masterdegree=?, teacher_id=? where id=?
+2023-10-05 06:03:13.645 DEBUG  Delete 0: delete from Teacher where id=?
+2023-10-05 06:03:13.646 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@38e7ed69]
+2023-10-05 06:03:13.646 DEBUG Visiting attribute path : dateOfBirth
+2023-10-05 06:03:13.646 DEBUG Visiting attribute path : firstName
+2023-10-05 06:03:13.646 DEBUG Visiting attribute path : lastName
+2023-10-05 06:03:13.646 DEBUG Visiting attribute path : degree
+2023-10-05 06:03:13.646 DEBUG Visiting attribute path : masterdegree
+2023-10-05 06:03:13.646 DEBUG Visiting attribute path : teacherId
+2023-10-05 06:03:13.646 DEBUG Building LoadPlan...
+2023-10-05 06:03:13.646 DEBUG processing queryspace <gen:0>
+2023-10-05 06:03:13.646 DEBUG LoadPlan(entity=q1.entity.Teacher)
+    - Returns
+       - EntityReturnImpl(entity=q1.entity.Teacher, querySpaceUid=<gen:0>, path=q1.entity.Teacher)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=q1.entity.Teacher)
+          - SQL table alias mapping - teacher0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2023-10-05 06:03:13.646 DEBUG Static select for entity q1.entity.Teacher [NONE]: select teacher0_.id as id1_1_0_, teacher0_.date_of_birth as date_of_2_1_0_, teacher0_.first_name as first_na3_1_0_, teacher0_.last_name as last_nam4_1_0_, teacher0_.degree as degree1_5_0_, teacher0_.masterdegree as masterde2_5_0_, teacher0_.teacher_id as teacher_3_5_0_ from Teacher teacher0_ where teacher0_.id=?
+2023-10-05 06:03:13.646 DEBUG Static SQL for entity: q1.entity.Person
+2023-10-05 06:03:13.646 DEBUG  Version select: select id from persons where id =?
+2023-10-05 06:03:13.646 DEBUG  Snapshot select: select person_.id, person_.date_of_birth as date_of_2_1_, person_.first_name as first_na3_1_, person_.last_name as last_nam4_1_ from ( select id, date_of_birth, first_name, last_name, null::int4 as entry_year, null::varchar as field_of_study, null::int8 as student_id, null::varchar as degree, null::int4 as masterdegree, null::int8 as teacher_id, 0 as clazz_ from persons union all select id, date_of_birth, first_name, last_name, entry_year, field_of_study, student_id, null::varchar as degree, null::int4 as masterdegree, null::int8 as teacher_id, 1 as clazz_ from Student union all select id, date_of_birth, first_name, last_name, null::int4 as entry_year, null::varchar as field_of_study, null::int8 as student_id, degree, masterdegree, teacher_id, 2 as clazz_ from Teacher ) person_ where person_.id=?
+2023-10-05 06:03:13.646 DEBUG  Insert 0: insert into persons (date_of_birth, first_name, last_name, id) values (?, ?, ?, ?)
+2023-10-05 06:03:13.646 DEBUG  Update 0: update persons set date_of_birth=?, first_name=?, last_name=? where id=?
+2023-10-05 06:03:13.646 DEBUG  Delete 0: delete from persons where id=?
+2023-10-05 06:03:13.646 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@78b612c6]
+2023-10-05 06:03:13.646 DEBUG Visiting attribute path : dateOfBirth
+2023-10-05 06:03:13.646 DEBUG Visiting attribute path : firstName
+2023-10-05 06:03:13.646 DEBUG Visiting attribute path : lastName
+2023-10-05 06:03:13.646 DEBUG Visiting attribute path : entryYear
+2023-10-05 06:03:13.646 DEBUG Visiting attribute path : fieldOfStudy
+2023-10-05 06:03:13.646 DEBUG Visiting attribute path : studentId
+2023-10-05 06:03:13.646 DEBUG Visiting attribute path : degree
+2023-10-05 06:03:13.646 DEBUG Visiting attribute path : masterdegree
+2023-10-05 06:03:13.647 DEBUG Visiting attribute path : teacherId
+2023-10-05 06:03:13.647 DEBUG Building LoadPlan...
+2023-10-05 06:03:13.647 DEBUG processing queryspace <gen:0>
+2023-10-05 06:03:13.647 DEBUG LoadPlan(entity=q1.entity.Person)
+    - Returns
+       - EntityReturnImpl(entity=q1.entity.Person, querySpaceUid=<gen:0>, path=q1.entity.Person)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=q1.entity.Person)
+          - SQL table alias mapping - person0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2023-10-05 06:03:13.647 DEBUG Static select for entity q1.entity.Person [NONE]: select person0_.id as id1_1_0_, person0_.date_of_birth as date_of_2_1_0_, person0_.first_name as first_na3_1_0_, person0_.last_name as last_nam4_1_0_, person0_.entry_year as entry_ye1_2_0_, person0_.field_of_study as field_of2_2_0_, person0_.student_id as student_3_2_0_, person0_.degree as degree1_5_0_, person0_.masterdegree as masterde2_5_0_, person0_.teacher_id as teacher_3_5_0_, person0_.clazz_ as clazz_0_ from ( select id, date_of_birth, first_name, last_name, null::int4 as entry_year, null::varchar as field_of_study, null::int8 as student_id, null::varchar as degree, null::int4 as masterdegree, null::int8 as teacher_id, 0 as clazz_ from persons union all select id, date_of_birth, first_name, last_name, entry_year, field_of_study, student_id, null::varchar as degree, null::int4 as masterdegree, null::int8 as teacher_id, 1 as clazz_ from Student union all select id, date_of_birth, first_name, last_name, null::int4 as entry_year, null::varchar as field_of_study, null::int8 as student_id, degree, masterdegree, teacher_id, 2 as clazz_ from Teacher ) person0_ where person0_.id=?
+2023-10-05 06:03:13.647 DEBUG Static SQL for entity: q2.entity.Course
+2023-10-05 06:03:13.647 DEBUG  Version select: select id from Course where id =?
+2023-10-05 06:03:13.647 DEBUG  Snapshot select: select course_.id, course_.course_name as course_n2_0_ from Course course_ where course_.id=?
+2023-10-05 06:03:13.647 DEBUG  Insert 0: insert into Course (course_name, id) values (?, ?)
+2023-10-05 06:03:13.647 DEBUG  Update 0: update Course set course_name=? where id=?
+2023-10-05 06:03:13.647 DEBUG  Delete 0: delete from Course where id=?
+2023-10-05 06:03:13.647 DEBUG Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@22752544]
+2023-10-05 06:03:13.647 DEBUG Visiting attribute path : courseName
+2023-10-05 06:03:13.647 DEBUG Building LoadPlan...
+2023-10-05 06:03:13.647 DEBUG processing queryspace <gen:0>
+2023-10-05 06:03:13.647 DEBUG LoadPlan(entity=q2.entity.Course)
+    - Returns
+       - EntityReturnImpl(entity=q2.entity.Course, querySpaceUid=<gen:0>, path=q2.entity.Course)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=q2.entity.Course)
+          - SQL table alias mapping - course0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2023-10-05 06:03:13.648 DEBUG Static select for entity q2.entity.Course [NONE]: select course0_.id as id1_0_0_, course0_.course_name as course_n2_0_0_ from Course course0_ where course0_.id=?
+2023-10-05 06:03:13.673 DEBUG 
+    
+    drop table if exists Course cascade
+2023-10-05 06:03:13.675 INFO  HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2e17a321] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2023-10-05 06:03:13.679 DEBUG 
+    
+    drop table if exists persons cascade
+2023-10-05 06:03:13.681 DEBUG 
+    
+    drop table if exists Student cascade
+2023-10-05 06:03:13.683 DEBUG 
+    
+    drop table if exists StudentCourseRating cascade
+2023-10-05 06:03:13.686 DEBUG 
+    
+    drop table if exists Studentt cascade
+2023-10-05 06:03:13.687 DEBUG 
+    
+    drop table if exists Teacher cascade
+2023-10-05 06:03:13.689 DEBUG 
+    
+    drop sequence if exists hibernate_sequence
+2023-10-05 06:03:13.693 DEBUG create sequence hibernate_sequence start 1 increment 1
+2023-10-05 06:03:13.693 INFO  HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@32fa809f] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2023-10-05 06:03:13.696 DEBUG 
+    
+    create table Course (
+       id int8 not null,
+        course_name varchar(255),
+        primary key (id)
+    )
+2023-10-05 06:03:13.702 DEBUG 
+    
+    create table persons (
+       id int8 not null,
+        date_of_birth date,
+        first_name varchar(255),
+        last_name varchar(255),
+        primary key (id)
+    )
+2023-10-05 06:03:13.707 DEBUG 
+    
+    create table Student (
+       id int8 not null,
+        date_of_birth date,
+        first_name varchar(255),
+        last_name varchar(255),
+        entry_year int4,
+        field_of_study varchar(255),
+        student_id int8,
+        primary key (id)
+    )
+2023-10-05 06:03:13.712 DEBUG 
+    
+    create table StudentCourseRating (
+       id int8 not null,
+        comment varchar(255),
+        rating float8,
+        timestamp date,
+        primary key (id)
+    )
+2023-10-05 06:03:13.715 DEBUG 
+    
+    create table Studentt (
+       id int8 not null,
+        student_name varchar(255),
+        primary key (id)
+    )
+2023-10-05 06:03:13.718 DEBUG 
+    
+    create table Teacher (
+       id int8 not null,
+        date_of_birth date,
+        first_name varchar(255),
+        last_name varchar(255),
+        degree varchar(255),
+        masterdegree int4,
+        teacher_id int8,
+        primary key (id)
+    )
+2023-10-05 06:03:13.726 DEBUG No JtaPlatform was specified, checking resolver
+2023-10-05 06:03:13.726 DEBUG No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2023-10-05 06:03:13.729 DEBUG Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05 06:03:13.729 INFO  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-05 06:03:13.730 DEBUG Checking 0 named HQL queries
+2023-10-05 06:03:13.730 DEBUG Checking 0 named SQL queries
+2023-10-05 06:03:13.735 DEBUG EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2023-10-05 06:03:13.741 DEBUG Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@42aae04d
+2023-10-05 06:03:13.742 DEBUG Registering SessionFactory: 083710d7-6584-41ed-b07c-ce5d56fce1d9 (<unnamed>)
+2023-10-05 06:03:13.742 DEBUG Not binding SessionFactory to JNDI, no JNDI name configured
+2023-10-05 06:03:13.779 DEBUG Statistics initialized [enabled=false]
+2023-10-05 06:03:13.788 DEBUG On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2023-10-05 06:03:13.788 DEBUG begin
+2023-10-05 06:03:13.792 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.797 DEBUG Sequence value obtained: 1
+2023-10-05 06:03:13.797 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.797 DEBUG Generated identifier: 1, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.808 DEBUG committing
+2023-10-05 06:03:13.808 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.808 DEBUG Dirty checking collections
+2023-10-05 06:03:13.811 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 1 objects
+2023-10-05 06:03:13.811 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.812 DEBUG Listing entities:
+2023-10-05 06:03:13.812 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.814 DEBUG 
+    insert 
+    into
+        Studentt
+        (student_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.820 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.820 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.820 DEBUG begin
+2023-10-05 06:03:13.820 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.821 DEBUG Sequence value obtained: 2
+2023-10-05 06:03:13.821 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.821 DEBUG Generated identifier: 2, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.821 DEBUG committing
+2023-10-05 06:03:13.821 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.821 DEBUG Dirty checking collections
+2023-10-05 06:03:13.821 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 2 objects
+2023-10-05 06:03:13.822 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.822 DEBUG Listing entities:
+2023-10-05 06:03:13.822 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.822 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.822 DEBUG 
+    insert 
+    into
+        Course
+        (course_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.824 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.824 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.824 DEBUG begin
+2023-10-05 06:03:13.824 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.825 DEBUG Sequence value obtained: 3
+2023-10-05 06:03:13.825 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.825 DEBUG Generated identifier: 3, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.827 DEBUG committing
+2023-10-05 06:03:13.827 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.827 DEBUG Dirty checking collections
+2023-10-05 06:03:13.827 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 3 objects
+2023-10-05 06:03:13.827 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.827 DEBUG Listing entities:
+2023-10-05 06:03:13.827 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.827 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.827 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.827 DEBUG 
+    insert 
+    into
+        StudentCourseRating
+        (comment, rating, timestamp, id) 
+    values
+        (?, ?, ?, ?)
+2023-10-05 06:03:13.830 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.830 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.830 DEBUG begin
+2023-10-05 06:03:13.831 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.831 DEBUG Sequence value obtained: 4
+2023-10-05 06:03:13.831 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.831 DEBUG Generated identifier: 4, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.832 DEBUG committing
+2023-10-05 06:03:13.832 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.832 DEBUG Dirty checking collections
+2023-10-05 06:03:13.832 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 4 objects
+2023-10-05 06:03:13.832 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.832 DEBUG Listing entities:
+2023-10-05 06:03:13.832 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.832 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.832 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.832 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.832 DEBUG 
+    insert 
+    into
+        Studentt
+        (student_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.833 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.833 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.833 DEBUG begin
+2023-10-05 06:03:13.833 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.833 DEBUG Sequence value obtained: 5
+2023-10-05 06:03:13.833 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.833 DEBUG Generated identifier: 5, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.833 DEBUG committing
+2023-10-05 06:03:13.833 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.833 DEBUG Dirty checking collections
+2023-10-05 06:03:13.834 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 5 objects
+2023-10-05 06:03:13.834 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.834 DEBUG Listing entities:
+2023-10-05 06:03:13.834 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.834 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.834 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.834 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.834 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.834 DEBUG 
+    insert 
+    into
+        Course
+        (course_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.834 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.835 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.835 DEBUG begin
+2023-10-05 06:03:13.835 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.835 DEBUG Sequence value obtained: 6
+2023-10-05 06:03:13.835 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.835 DEBUG Generated identifier: 6, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.835 DEBUG committing
+2023-10-05 06:03:13.835 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.835 DEBUG Dirty checking collections
+2023-10-05 06:03:13.835 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 6 objects
+2023-10-05 06:03:13.835 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.835 DEBUG Listing entities:
+2023-10-05 06:03:13.836 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.836 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.836 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.836 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.836 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.836 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.836 DEBUG 
+    insert 
+    into
+        StudentCourseRating
+        (comment, rating, timestamp, id) 
+    values
+        (?, ?, ?, ?)
+2023-10-05 06:03:13.837 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.837 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.837 DEBUG begin
+2023-10-05 06:03:13.837 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.837 DEBUG Sequence value obtained: 7
+2023-10-05 06:03:13.837 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.837 DEBUG Generated identifier: 7, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.837 DEBUG committing
+2023-10-05 06:03:13.837 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.837 DEBUG Dirty checking collections
+2023-10-05 06:03:13.838 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 7 objects
+2023-10-05 06:03:13.838 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.838 DEBUG Listing entities:
+2023-10-05 06:03:13.838 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.838 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.838 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.838 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.838 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.838 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.838 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.838 DEBUG 
+    insert 
+    into
+        Studentt
+        (student_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.839 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.839 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.839 DEBUG begin
+2023-10-05 06:03:13.839 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.839 DEBUG Sequence value obtained: 8
+2023-10-05 06:03:13.839 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.839 DEBUG Generated identifier: 8, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.839 DEBUG committing
+2023-10-05 06:03:13.839 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.840 DEBUG Dirty checking collections
+2023-10-05 06:03:13.840 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 8 objects
+2023-10-05 06:03:13.840 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.840 DEBUG Listing entities:
+2023-10-05 06:03:13.840 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.840 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.840 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.840 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.840 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.840 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.840 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.840 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.841 DEBUG 
+    insert 
+    into
+        Course
+        (course_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.841 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.841 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.841 DEBUG begin
+2023-10-05 06:03:13.842 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.842 DEBUG Sequence value obtained: 9
+2023-10-05 06:03:13.842 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.842 DEBUG Generated identifier: 9, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.842 DEBUG committing
+2023-10-05 06:03:13.842 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.842 DEBUG Dirty checking collections
+2023-10-05 06:03:13.842 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 9 objects
+2023-10-05 06:03:13.842 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.842 DEBUG Listing entities:
+2023-10-05 06:03:13.842 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.842 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.842 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.842 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.842 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.843 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.843 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.843 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.843 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.843 DEBUG 
+    insert 
+    into
+        StudentCourseRating
+        (comment, rating, timestamp, id) 
+    values
+        (?, ?, ?, ?)
+2023-10-05 06:03:13.843 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.843 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.844 DEBUG begin
+2023-10-05 06:03:13.844 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.844 DEBUG Sequence value obtained: 10
+2023-10-05 06:03:13.844 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.844 DEBUG Generated identifier: 10, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.844 DEBUG committing
+2023-10-05 06:03:13.844 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.844 DEBUG Dirty checking collections
+2023-10-05 06:03:13.844 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 10 objects
+2023-10-05 06:03:13.845 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.845 DEBUG Listing entities:
+2023-10-05 06:03:13.845 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.845 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.845 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.845 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.845 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.845 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.845 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.845 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.845 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.845 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.845 DEBUG 
+    insert 
+    into
+        Studentt
+        (student_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.845 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.846 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.846 DEBUG begin
+2023-10-05 06:03:13.850 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.850 DEBUG Sequence value obtained: 11
+2023-10-05 06:03:13.850 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.850 DEBUG Generated identifier: 11, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.850 DEBUG committing
+2023-10-05 06:03:13.850 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.850 DEBUG Dirty checking collections
+2023-10-05 06:03:13.851 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 11 objects
+2023-10-05 06:03:13.851 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.851 DEBUG Listing entities:
+2023-10-05 06:03:13.851 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.851 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.851 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.851 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.851 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.851 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.851 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.851 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.851 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.851 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.851 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.851 DEBUG 
+    insert 
+    into
+        Course
+        (course_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.852 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.853 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.853 DEBUG begin
+2023-10-05 06:03:13.853 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.853 DEBUG Sequence value obtained: 12
+2023-10-05 06:03:13.853 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.853 DEBUG Generated identifier: 12, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.854 DEBUG committing
+2023-10-05 06:03:13.854 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.854 DEBUG Dirty checking collections
+2023-10-05 06:03:13.854 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 12 objects
+2023-10-05 06:03:13.854 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.854 DEBUG Listing entities:
+2023-10-05 06:03:13.854 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.854 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.854 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.854 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.854 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.854 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.854 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.854 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.854 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.855 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.855 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.855 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.855 DEBUG 
+    insert 
+    into
+        StudentCourseRating
+        (comment, rating, timestamp, id) 
+    values
+        (?, ?, ?, ?)
+2023-10-05 06:03:13.856 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.856 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.857 DEBUG begin
+2023-10-05 06:03:13.857 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.857 DEBUG Sequence value obtained: 13
+2023-10-05 06:03:13.857 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.857 DEBUG Generated identifier: 13, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.857 DEBUG committing
+2023-10-05 06:03:13.858 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.858 DEBUG Dirty checking collections
+2023-10-05 06:03:13.858 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 13 objects
+2023-10-05 06:03:13.858 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.858 DEBUG Listing entities:
+2023-10-05 06:03:13.858 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.858 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.858 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.858 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.858 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.858 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.858 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.858 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.858 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.858 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.858 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.858 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.858 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.858 DEBUG 
+    insert 
+    into
+        Studentt
+        (student_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.859 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.859 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.859 DEBUG begin
+2023-10-05 06:03:13.859 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.860 DEBUG Sequence value obtained: 14
+2023-10-05 06:03:13.860 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.860 DEBUG Generated identifier: 14, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.860 DEBUG committing
+2023-10-05 06:03:13.860 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.860 DEBUG Dirty checking collections
+2023-10-05 06:03:13.860 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 14 objects
+2023-10-05 06:03:13.860 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.860 DEBUG Listing entities:
+2023-10-05 06:03:13.860 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.860 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.860 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.860 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.861 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.861 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.861 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.861 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.861 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.861 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.861 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.861 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.861 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.861 DEBUG q2.entity.Course{courseName="Design Patterns in Java", id=14}
+2023-10-05 06:03:13.861 DEBUG 
+    insert 
+    into
+        Course
+        (course_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.861 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.861 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.862 DEBUG begin
+2023-10-05 06:03:13.862 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.862 DEBUG Sequence value obtained: 15
+2023-10-05 06:03:13.862 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.862 DEBUG Generated identifier: 15, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.862 DEBUG committing
+2023-10-05 06:03:13.862 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.863 DEBUG Dirty checking collections
+2023-10-05 06:03:13.863 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 15 objects
+2023-10-05 06:03:13.863 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.863 DEBUG Listing entities:
+2023-10-05 06:03:13.863 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.863 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.863 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.863 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.863 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.863 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.864 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.864 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.864 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.864 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.864 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.864 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.864 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.864 DEBUG q2.entity.Course{courseName="Design Patterns in Java", id=14}
+2023-10-05 06:03:13.864 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Great Experience, id=15, timestamp=2019-06-28}
+2023-10-05 06:03:13.864 DEBUG 
+    insert 
+    into
+        StudentCourseRating
+        (comment, rating, timestamp, id) 
+    values
+        (?, ?, ?, ?)
+2023-10-05 06:03:13.865 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.865 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.873 DEBUG begin
+2023-10-05 06:03:13.873 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.874 DEBUG Sequence value obtained: 16
+2023-10-05 06:03:13.874 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.874 DEBUG Generated identifier: 16, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.874 DEBUG committing
+2023-10-05 06:03:13.874 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.874 DEBUG Dirty checking collections
+2023-10-05 06:03:13.875 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 16 objects
+2023-10-05 06:03:13.875 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.875 DEBUG Listing entities:
+2023-10-05 06:03:13.875 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.875 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.875 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.875 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.875 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.875 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.875 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.875 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.875 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.875 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.875 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.875 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.875 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.875 DEBUG q2.entity.Course{courseName="Design Patterns in Java", id=14}
+2023-10-05 06:03:13.875 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Great Experience, id=15, timestamp=2019-06-28}
+2023-10-05 06:03:13.875 DEBUG q2.entity.Studentt{studentName=Praveen, id=16}
+2023-10-05 06:03:13.875 DEBUG 
+    insert 
+    into
+        Studentt
+        (student_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.876 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.876 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.876 DEBUG begin
+2023-10-05 06:03:13.876 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.876 DEBUG Sequence value obtained: 17
+2023-10-05 06:03:13.877 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.877 DEBUG Generated identifier: 17, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.877 DEBUG committing
+2023-10-05 06:03:13.877 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.877 DEBUG Dirty checking collections
+2023-10-05 06:03:13.877 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 17 objects
+2023-10-05 06:03:13.878 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.878 DEBUG Listing entities:
+2023-10-05 06:03:13.878 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.878 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.878 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.878 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.878 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.878 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.878 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.878 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.878 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.878 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.878 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.878 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.878 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.878 DEBUG q2.entity.Course{courseName=Java Servlet JSP and Hibernate, id=17}
+2023-10-05 06:03:13.878 DEBUG q2.entity.Course{courseName="Design Patterns in Java", id=14}
+2023-10-05 06:03:13.878 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Great Experience, id=15, timestamp=2019-06-28}
+2023-10-05 06:03:13.878 DEBUG q2.entity.Studentt{studentName=Praveen, id=16}
+2023-10-05 06:03:13.878 DEBUG 
+    insert 
+    into
+        Course
+        (course_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.879 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.879 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.879 DEBUG begin
+2023-10-05 06:03:13.879 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.879 DEBUG Sequence value obtained: 18
+2023-10-05 06:03:13.879 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.879 DEBUG Generated identifier: 18, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.879 DEBUG committing
+2023-10-05 06:03:13.879 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.879 DEBUG Dirty checking collections
+2023-10-05 06:03:13.880 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 18 objects
+2023-10-05 06:03:13.880 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.880 DEBUG Listing entities:
+2023-10-05 06:03:13.880 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.880 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.880 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.880 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.880 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.880 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.880 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.880 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.880 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.880 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.880 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.880 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.880 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.880 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment=excellent teaching., id=18, timestamp=2019-07-31}
+2023-10-05 06:03:13.880 DEBUG q2.entity.Course{courseName=Java Servlet JSP and Hibernate, id=17}
+2023-10-05 06:03:13.880 DEBUG q2.entity.Course{courseName="Design Patterns in Java", id=14}
+2023-10-05 06:03:13.880 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Great Experience, id=15, timestamp=2019-06-28}
+2023-10-05 06:03:13.880 DEBUG q2.entity.Studentt{studentName=Praveen, id=16}
+2023-10-05 06:03:13.880 DEBUG 
+    insert 
+    into
+        StudentCourseRating
+        (comment, rating, timestamp, id) 
+    values
+        (?, ?, ?, ?)
+2023-10-05 06:03:13.881 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.881 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.881 DEBUG begin
+2023-10-05 06:03:13.881 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.881 DEBUG Sequence value obtained: 19
+2023-10-05 06:03:13.881 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.881 DEBUG Generated identifier: 19, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.882 DEBUG committing
+2023-10-05 06:03:13.882 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.882 DEBUG Dirty checking collections
+2023-10-05 06:03:13.882 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 19 objects
+2023-10-05 06:03:13.882 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.882 DEBUG Listing entities:
+2023-10-05 06:03:13.882 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.882 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.882 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.882 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.882 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.882 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.882 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.882 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.882 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.882 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.882 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.882 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.882 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.882 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment=excellent teaching., id=18, timestamp=2019-07-31}
+2023-10-05 06:03:13.882 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=19}
+2023-10-05 06:03:13.882 DEBUG q2.entity.Course{courseName=Java Servlet JSP and Hibernate, id=17}
+2023-10-05 06:03:13.882 DEBUG q2.entity.Course{courseName="Design Patterns in Java", id=14}
+2023-10-05 06:03:13.882 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Great Experience, id=15, timestamp=2019-06-28}
+2023-10-05 06:03:13.882 DEBUG q2.entity.Studentt{studentName=Praveen, id=16}
+2023-10-05 06:03:13.883 DEBUG 
+    insert 
+    into
+        Studentt
+        (student_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.883 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.883 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.883 DEBUG begin
+2023-10-05 06:03:13.883 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.883 DEBUG Sequence value obtained: 20
+2023-10-05 06:03:13.883 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.883 DEBUG Generated identifier: 20, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.884 DEBUG committing
+2023-10-05 06:03:13.884 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.884 DEBUG Dirty checking collections
+2023-10-05 06:03:13.884 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 20 objects
+2023-10-05 06:03:13.884 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.884 DEBUG Listing entities:
+2023-10-05 06:03:13.884 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.884 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.884 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.884 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.884 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.884 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.884 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.884 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.884 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.884 DEBUG q2.entity.Course{courseName=Java Microservices Masterclass, id=20}
+2023-10-05 06:03:13.884 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.884 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.884 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.884 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.884 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment=excellent teaching., id=18, timestamp=2019-07-31}
+2023-10-05 06:03:13.884 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=19}
+2023-10-05 06:03:13.884 DEBUG q2.entity.Course{courseName=Java Servlet JSP and Hibernate, id=17}
+2023-10-05 06:03:13.884 DEBUG q2.entity.Course{courseName="Design Patterns in Java", id=14}
+2023-10-05 06:03:13.885 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Great Experience, id=15, timestamp=2019-06-28}
+2023-10-05 06:03:13.885 DEBUG q2.entity.Studentt{studentName=Praveen, id=16}
+2023-10-05 06:03:13.885 DEBUG 
+    insert 
+    into
+        Course
+        (course_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.885 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.885 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.885 DEBUG begin
+2023-10-05 06:03:13.885 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.885 DEBUG Sequence value obtained: 21
+2023-10-05 06:03:13.885 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.885 DEBUG Generated identifier: 21, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.886 DEBUG committing
+2023-10-05 06:03:13.886 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.886 DEBUG Dirty checking collections
+2023-10-05 06:03:13.886 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 21 objects
+2023-10-05 06:03:13.886 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.886 DEBUG Listing entities:
+2023-10-05 06:03:13.886 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.886 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.886 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.886 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.886 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.886 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.886 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.886 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.886 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.886 DEBUG q2.entity.Course{courseName=Java Microservices Masterclass, id=20}
+2023-10-05 06:03:13.886 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.886 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.886 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment=The course is great., id=21, timestamp=2019-04-23}
+2023-10-05 06:03:13.886 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.886 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.886 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment=excellent teaching., id=18, timestamp=2019-07-31}
+2023-10-05 06:03:13.886 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=19}
+2023-10-05 06:03:13.886 DEBUG q2.entity.Course{courseName=Java Servlet JSP and Hibernate, id=17}
+2023-10-05 06:03:13.887 DEBUG q2.entity.Course{courseName="Design Patterns in Java", id=14}
+2023-10-05 06:03:13.887 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Great Experience, id=15, timestamp=2019-06-28}
+2023-10-05 06:03:13.887 DEBUG q2.entity.Studentt{studentName=Praveen, id=16}
+2023-10-05 06:03:13.887 DEBUG 
+    insert 
+    into
+        StudentCourseRating
+        (comment, rating, timestamp, id) 
+    values
+        (?, ?, ?, ?)
+2023-10-05 06:03:13.887 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.887 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.887 DEBUG begin
+2023-10-05 06:03:13.888 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.888 DEBUG Sequence value obtained: 22
+2023-10-05 06:03:13.888 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.888 DEBUG Generated identifier: 22, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.888 DEBUG committing
+2023-10-05 06:03:13.888 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.888 DEBUG Dirty checking collections
+2023-10-05 06:03:13.888 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 22 objects
+2023-10-05 06:03:13.888 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.888 DEBUG Listing entities:
+2023-10-05 06:03:13.888 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.888 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.888 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=22}
+2023-10-05 06:03:13.888 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.888 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.888 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.889 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.889 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.889 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.889 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.889 DEBUG q2.entity.Course{courseName=Java Microservices Masterclass, id=20}
+2023-10-05 06:03:13.889 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.889 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.889 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment=The course is great., id=21, timestamp=2019-04-23}
+2023-10-05 06:03:13.889 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.889 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.889 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment=excellent teaching., id=18, timestamp=2019-07-31}
+2023-10-05 06:03:13.889 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=19}
+2023-10-05 06:03:13.889 DEBUG q2.entity.Course{courseName=Java Servlet JSP and Hibernate, id=17}
+2023-10-05 06:03:13.889 DEBUG q2.entity.Course{courseName="Design Patterns in Java", id=14}
+2023-10-05 06:03:13.889 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Great Experience, id=15, timestamp=2019-06-28}
+2023-10-05 06:03:13.889 DEBUG More......
+2023-10-05 06:03:13.889 DEBUG 
+    insert 
+    into
+        Studentt
+        (student_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.890 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.890 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.890 DEBUG begin
+2023-10-05 06:03:13.890 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.890 DEBUG Sequence value obtained: 23
+2023-10-05 06:03:13.890 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.890 DEBUG Generated identifier: 23, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.890 DEBUG committing
+2023-10-05 06:03:13.890 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.890 DEBUG Dirty checking collections
+2023-10-05 06:03:13.891 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 23 objects
+2023-10-05 06:03:13.891 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.891 DEBUG Listing entities:
+2023-10-05 06:03:13.891 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.891 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.891 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=22}
+2023-10-05 06:03:13.891 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.891 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.891 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.891 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.891 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.891 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.891 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.891 DEBUG q2.entity.Course{courseName=Java Microservices Masterclass, id=20}
+2023-10-05 06:03:13.891 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.891 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.891 DEBUG q2.entity.Course{courseName=Java Servlet JSP and Hibernate, id=23}
+2023-10-05 06:03:13.891 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment=The course is great., id=21, timestamp=2019-04-23}
+2023-10-05 06:03:13.891 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.891 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.891 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment=excellent teaching., id=18, timestamp=2019-07-31}
+2023-10-05 06:03:13.891 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=19}
+2023-10-05 06:03:13.891 DEBUG q2.entity.Course{courseName=Java Servlet JSP and Hibernate, id=17}
+2023-10-05 06:03:13.891 DEBUG q2.entity.Course{courseName="Design Patterns in Java", id=14}
+2023-10-05 06:03:13.891 DEBUG More......
+2023-10-05 06:03:13.891 DEBUG 
+    insert 
+    into
+        Course
+        (course_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.892 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.892 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.892 DEBUG begin
+2023-10-05 06:03:13.892 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.892 DEBUG Sequence value obtained: 24
+2023-10-05 06:03:13.892 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.892 DEBUG Generated identifier: 24, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.892 DEBUG committing
+2023-10-05 06:03:13.892 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.892 DEBUG Dirty checking collections
+2023-10-05 06:03:13.893 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 24 objects
+2023-10-05 06:03:13.893 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.893 DEBUG Listing entities:
+2023-10-05 06:03:13.893 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.893 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.893 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=22}
+2023-10-05 06:03:13.893 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.893 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.893 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.893 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.893 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.893 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.893 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.893 DEBUG q2.entity.Course{courseName=Java Microservices Masterclass, id=20}
+2023-10-05 06:03:13.893 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.893 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.893 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment=The course is great., id=24, timestamp=2019-04-23}
+2023-10-05 06:03:13.893 DEBUG q2.entity.Course{courseName=Java Servlet JSP and Hibernate, id=23}
+2023-10-05 06:03:13.893 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment=The course is great., id=21, timestamp=2019-04-23}
+2023-10-05 06:03:13.893 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.893 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.893 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment=excellent teaching., id=18, timestamp=2019-07-31}
+2023-10-05 06:03:13.893 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=19}
+2023-10-05 06:03:13.893 DEBUG q2.entity.Course{courseName=Java Servlet JSP and Hibernate, id=17}
+2023-10-05 06:03:13.893 DEBUG More......
+2023-10-05 06:03:13.893 DEBUG 
+    insert 
+    into
+        StudentCourseRating
+        (comment, rating, timestamp, id) 
+    values
+        (?, ?, ?, ?)
+2023-10-05 06:03:13.894 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.894 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.894 DEBUG begin
+2023-10-05 06:03:13.894 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.895 DEBUG Sequence value obtained: 25
+2023-10-05 06:03:13.895 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.895 DEBUG Generated identifier: 25, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.895 DEBUG committing
+2023-10-05 06:03:13.895 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.895 DEBUG Dirty checking collections
+2023-10-05 06:03:13.895 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 25 objects
+2023-10-05 06:03:13.895 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.895 DEBUG Listing entities:
+2023-10-05 06:03:13.895 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.895 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=22}
+2023-10-05 06:03:13.895 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.895 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=25}
+2023-10-05 06:03:13.895 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.895 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.895 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.895 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.895 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.895 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.895 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=19}
+2023-10-05 06:03:13.895 DEBUG q2.entity.Studentt{studentName=Praveen, id=16}
+2023-10-05 06:03:13.895 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.896 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.896 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.896 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.896 DEBUG q2.entity.Course{courseName=Java Microservices Masterclass, id=20}
+2023-10-05 06:03:13.896 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment=The course is great., id=24, timestamp=2019-04-23}
+2023-10-05 06:03:13.896 DEBUG q2.entity.Course{courseName=Java Servlet JSP and Hibernate, id=23}
+2023-10-05 06:03:13.896 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment=The course is great., id=21, timestamp=2019-04-23}
+2023-10-05 06:03:13.896 DEBUG q2.entity.Course{courseName="Python for Data Science", id=11}
+2023-10-05 06:03:13.896 DEBUG More......
+2023-10-05 06:03:13.896 DEBUG 
+    insert 
+    into
+        Studentt
+        (student_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.897 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.897 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.897 DEBUG begin
+2023-10-05 06:03:13.897 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.897 DEBUG Sequence value obtained: 26
+2023-10-05 06:03:13.897 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.897 DEBUG Generated identifier: 26, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.897 DEBUG committing
+2023-10-05 06:03:13.897 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.897 DEBUG Dirty checking collections
+2023-10-05 06:03:13.897 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 26 objects
+2023-10-05 06:03:13.897 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.898 DEBUG Listing entities:
+2023-10-05 06:03:13.898 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=22}
+2023-10-05 06:03:13.898 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=25}
+2023-10-05 06:03:13.898 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.898 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Course{courseName=Python for Data Science, id=26}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=19}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Studentt{studentName=Praveen, id=16}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Course{courseName=Java Microservices Masterclass, id=20}
+2023-10-05 06:03:13.898 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment=The course is great., id=24, timestamp=2019-04-23}
+2023-10-05 06:03:13.898 DEBUG q2.entity.Course{courseName=Java Servlet JSP and Hibernate, id=23}
+2023-10-05 06:03:13.898 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment=The course is great., id=21, timestamp=2019-04-23}
+2023-10-05 06:03:13.898 DEBUG More......
+2023-10-05 06:03:13.898 DEBUG 
+    insert 
+    into
+        Course
+        (course_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.899 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.899 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.899 DEBUG begin
+2023-10-05 06:03:13.899 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.899 DEBUG Sequence value obtained: 27
+2023-10-05 06:03:13.899 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.899 DEBUG Generated identifier: 27, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.899 DEBUG committing
+2023-10-05 06:03:13.899 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.899 DEBUG Dirty checking collections
+2023-10-05 06:03:13.899 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 27 objects
+2023-10-05 06:03:13.899 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.900 DEBUG Listing entities:
+2023-10-05 06:03:13.900 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=22}
+2023-10-05 06:03:13.900 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=25}
+2023-10-05 06:03:13.900 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.900 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Course{courseName=Python for Data Science, id=26}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=19}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Studentt{studentName=Praveen, id=16}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Course{courseName=Java Microservices Masterclass, id=20}
+2023-10-05 06:03:13.900 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment=Amazing experience after this course.Thank you, instructor., id=27, timestamp=2019-06-18}
+2023-10-05 06:03:13.900 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment=The course is great., id=24, timestamp=2019-04-23}
+2023-10-05 06:03:13.900 DEBUG q2.entity.Course{courseName=Java Servlet JSP and Hibernate, id=23}
+2023-10-05 06:03:13.900 DEBUG More......
+2023-10-05 06:03:13.900 DEBUG 
+    insert 
+    into
+        StudentCourseRating
+        (comment, rating, timestamp, id) 
+    values
+        (?, ?, ?, ?)
+2023-10-05 06:03:13.901 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.901 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.901 DEBUG begin
+2023-10-05 06:03:13.901 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.901 DEBUG Sequence value obtained: 28
+2023-10-05 06:03:13.901 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.901 DEBUG Generated identifier: 28, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.901 DEBUG committing
+2023-10-05 06:03:13.902 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.902 DEBUG Dirty checking collections
+2023-10-05 06:03:13.902 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 28 objects
+2023-10-05 06:03:13.902 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.902 DEBUG Listing entities:
+2023-10-05 06:03:13.902 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=22}
+2023-10-05 06:03:13.902 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=25}
+2023-10-05 06:03:13.902 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.902 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Course{courseName=Python for Data Science, id=26}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=28}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=19}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Studentt{studentName=Praveen, id=16}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.902 DEBUG q2.entity.Course{courseName=Java Microservices Masterclass, id=20}
+2023-10-05 06:03:13.902 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment=Amazing experience after this course.Thank you, instructor., id=27, timestamp=2019-06-18}
+2023-10-05 06:03:13.902 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment=The course is great., id=24, timestamp=2019-04-23}
+2023-10-05 06:03:13.902 DEBUG More......
+2023-10-05 06:03:13.903 DEBUG 
+    insert 
+    into
+        Studentt
+        (student_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.903 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.903 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.903 DEBUG begin
+2023-10-05 06:03:13.903 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.903 DEBUG Sequence value obtained: 29
+2023-10-05 06:03:13.903 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.903 DEBUG Generated identifier: 29, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.904 DEBUG committing
+2023-10-05 06:03:13.904 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.904 DEBUG Dirty checking collections
+2023-10-05 06:03:13.904 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 29 objects
+2023-10-05 06:03:13.904 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.904 DEBUG Listing entities:
+2023-10-05 06:03:13.904 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.904 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=22}
+2023-10-05 06:03:13.904 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.904 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=25}
+2023-10-05 06:03:13.904 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.904 DEBUG q2.entity.Course{courseName=Design Patterns in Java, id=29}
+2023-10-05 06:03:13.904 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.904 DEBUG q2.entity.Course{courseName=Python for Data Science, id=26}
+2023-10-05 06:03:13.904 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=28}
+2023-10-05 06:03:13.904 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.904 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.904 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.904 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.904 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=19}
+2023-10-05 06:03:13.904 DEBUG q2.entity.Studentt{studentName=Praveen, id=16}
+2023-10-05 06:03:13.904 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.904 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.904 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.905 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.905 DEBUG q2.entity.Course{courseName=Java Microservices Masterclass, id=20}
+2023-10-05 06:03:13.905 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment=Amazing experience after this course.Thank you, instructor., id=27, timestamp=2019-06-18}
+2023-10-05 06:03:13.905 DEBUG More......
+2023-10-05 06:03:13.905 DEBUG 
+    insert 
+    into
+        Course
+        (course_name, id) 
+    values
+        (?, ?)
+2023-10-05 06:03:13.905 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.905 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.905 DEBUG begin
+2023-10-05 06:03:13.905 DEBUG 
+    select
+        nextval ('hibernate_sequence')
+2023-10-05 06:03:13.906 DEBUG Sequence value obtained: 30
+2023-10-05 06:03:13.906 DEBUG HHH000387: ResultSet's statement was not registered
+2023-10-05 06:03:13.906 DEBUG Generated identifier: 30, using strategy: org.hibernate.id.enhanced.SequenceStyleGenerator
+2023-10-05 06:03:13.906 DEBUG committing
+2023-10-05 06:03:13.906 DEBUG Processing flush-time cascades
+2023-10-05 06:03:13.906 DEBUG Dirty checking collections
+2023-10-05 06:03:13.906 DEBUG Flushed: 1 insertions, 0 updates, 0 deletions to 30 objects
+2023-10-05 06:03:13.906 DEBUG Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-10-05 06:03:13.906 DEBUG Listing entities:
+2023-10-05 06:03:13.906 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="Amazing experience after this course.Thank you, id=12, timestamp=2019-06-18}
+2023-10-05 06:03:13.906 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=22}
+2023-10-05 06:03:13.906 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=9, timestamp=2019-04-23}
+2023-10-05 06:03:13.906 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=25}
+2023-10-05 06:03:13.906 DEBUG q2.entity.StudentCourseRating{rating=4.5, comment="The course is great.", id=6, timestamp=2019-04-23}
+2023-10-05 06:03:13.906 DEBUG q2.entity.Course{courseName=Design Patterns in Java, id=29}
+2023-10-05 06:03:13.906 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment="excellent teaching.", id=3, timestamp=2019-07-31}
+2023-10-05 06:03:13.906 DEBUG q2.entity.Course{courseName=Python for Data Science, id=26}
+2023-10-05 06:03:13.906 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=28}
+2023-10-05 06:03:13.906 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=7}
+2023-10-05 06:03:13.906 DEBUG q2.entity.Studentt{studentName=Van Hoang , id=4}
+2023-10-05 06:03:13.906 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=10}
+2023-10-05 06:03:13.906 DEBUG q2.entity.Studentt{studentName=Dhara Patel, id=13}
+2023-10-05 06:03:13.906 DEBUG q2.entity.Studentt{studentName=Van Hoang, id=19}
+2023-10-05 06:03:13.906 DEBUG q2.entity.Studentt{studentName=Praveen, id=16}
+2023-10-05 06:03:13.906 DEBUG q2.entity.Course{courseName="Java Microservices Masterclass", id=5}
+2023-10-05 06:03:13.907 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=2}
+2023-10-05 06:03:13.907 DEBUG q2.entity.Course{courseName="Java Servlet JSP and Hibernate", id=8}
+2023-10-05 06:03:13.907 DEBUG q2.entity.Studentt{studentName=Praveen , id=1}
+2023-10-05 06:03:13.907 DEBUG q2.entity.StudentCourseRating{rating=5.0, comment=Great Experience, I love this., id=30, timestamp=2019-06-28}
+2023-10-05 06:03:13.907 DEBUG q2.entity.Course{courseName=Java Microservices Masterclass, id=20}
+2023-10-05 06:03:13.907 DEBUG More......
+2023-10-05 06:03:13.907 DEBUG 
+    insert 
+    into
+        StudentCourseRating
+        (comment, rating, timestamp, id) 
+    values
+        (?, ?, ?, ?)
+2023-10-05 06:03:13.908 DEBUG Initiating JDBC connection release from afterTransaction
+2023-10-05 06:03:13.908 DEBUG Initiating JDBC connection release from afterTransaction
